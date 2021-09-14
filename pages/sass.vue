@@ -5,7 +5,7 @@
             <h1 class="text-center mb-3">Sass</h1>
             <div class="lessons">
               <div class="part-1">
-                <h2>Structurer et organiser le code</h2>
+                <h2>Structure et organiser le code</h2>
                 <ol>
                   <li v-for="lesson of lessons">
                   <nuxt-link :to="{ name: 'cours-sass-slug', params: { slug: lesson.slug } }">
