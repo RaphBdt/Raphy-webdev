@@ -8,7 +8,7 @@
                 <h2>Structurer et organiser le code</h2>
                 <ol>
                   <li v-for="lesson of lessons">
-                  <nuxt-link :to="{ name: 'sass-slug', params: { slug: lesson.slug } }">
+                  <nuxt-link :to="{ name: 'cours-sass-slug', params: { slug: lesson.slug } }">
                     {{ lesson.title }}
                   </nuxt-link>
                   </li>
@@ -22,7 +22,7 @@
 <script>
 export default {
     async asyncData({ $content, params }) {
-      const lessons = await $content('sass', params.slug)
+      const lessons = await $content('cours-sass', params.slug)
         .sortBy('id', 'asc')
         .fetch();
 
