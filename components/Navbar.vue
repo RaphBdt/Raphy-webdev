@@ -9,10 +9,10 @@
                 <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
                     <b-nav-item><nuxt-link to="/">Accueil</nuxt-link></b-nav-item>
-                    <b-nav-item><nuxt-link to="html-css">HTML / CSS</nuxt-link></b-nav-item>
-                    <b-nav-item><nuxt-link to="git-github">Git / GitHub</nuxt-link></b-nav-item>
-                    <b-nav-item><nuxt-link to="javascript">JavaScript</nuxt-link></b-nav-item>
-                    <b-nav-item><nuxt-link to="autres">Autres</nuxt-link></b-nav-item>
+                    <b-nav-item><nuxt-link to="/html-css">HTML / CSS</nuxt-link></b-nav-item>
+                    <b-nav-item><nuxt-link to="/git-github">Git / GitHub</nuxt-link></b-nav-item>
+                    <b-nav-item><nuxt-link to="/javascript">JavaScript</nuxt-link></b-nav-item>
+                    <b-nav-item><nuxt-link to="/autres">Autres</nuxt-link></b-nav-item>
                 </b-navbar-nav>
                 </b-collapse>
             </b-navbar>

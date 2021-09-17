@@ -1,7 +1,6 @@
 <template>
-
     <article class="container my-5">
-        <Button url="../html-css" />
+        <Button url="../sass" />
         <h1 class="text-center">{{ lesson.title }}</h1>
         <nuxt-content :document="lesson" />
     </article>
