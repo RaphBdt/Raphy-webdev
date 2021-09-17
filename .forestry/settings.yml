@@ -6,11 +6,11 @@ webhook_url:
 sections:
 - type: heading
   label: HTML / CSS
-- type: document
+- type: directory
   path: content/cours-sass
   label: Sass
+  create: all
   match: "**/*"
-  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
