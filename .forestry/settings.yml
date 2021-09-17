@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: HTML / CSS
 - type: directory
-  path: content/cours-sass
+  path: "./content/cours-sass"
   label: Sass
   create: all
   match: "**/*"
