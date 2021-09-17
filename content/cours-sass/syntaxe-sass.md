@@ -1,11 +1,11 @@
 ---
-id: 4
+id: "4"
 title: Syntaxe Sass
----
 
+---
 Le navigateur ne comprend pas SASS. Il doit donc être par la suite transformé en CSS.
 On peut dans un premier temps utiliser <a href="https://codepen.io">Codepen</a> car sait s'occuper de cette conversion.
-Il existe deux types de fichier : *.sass* et *.scss*. Il y a une différence de syntaxe entre les deux : *.scss* ressemble au CSS, tandis que *.sass* simplifie les choses car on utilise pas d'acolades.
+Il existe deux types de fichier : _.sass_ et _.scss_. Il y a une différence de syntaxe entre les deux : _.scss_ ressemble au CSS, tandis que _.sass_ simplifie les choses car on utilise pas d'acolades.
 
 .scss :
 
@@ -24,7 +24,7 @@ Il existe deux types de fichier : *.sass* et *.scss*. Il y a une différence de 
     background-color: black
 ```
 
-Il est beaucoup plus fréquent de tomber sur du *.scss*. Nous allons donc à partir de maintenant toujours utiliser cette syntaxe, même si nous l'appelons SASS.
+Il est beaucoup plus fréquent de tomber sur du _.scss_. Nous allons donc à partir de maintenant toujours utiliser cette syntaxe, même si nous l'appelons SASS.
 
 ## Le nesting
 
