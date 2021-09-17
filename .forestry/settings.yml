@@ -7,8 +7,6 @@ sections:
 - type: document
   path: content
   label: Cours
-  match: "**/*"
-  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
