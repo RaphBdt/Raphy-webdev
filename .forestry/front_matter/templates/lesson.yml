@@ -1,0 +1,10 @@
+---
+label: Lesson
+hide_body: false
+fields:
+- type: number
+  name: id
+  label: id
+- type: text
+  name: title
+  label: title
