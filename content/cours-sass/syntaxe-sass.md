@@ -1,7 +1,7 @@
 ---
 id: "4"
 title: Syntaxe Sass
-
+part: 1
 ---
 Le navigateur ne comprend pas SASS. Il doit donc être par la suite transformé en CSS.
 On peut dans un premier temps utiliser <a href="https://codepen.io">Codepen</a> car sait s'occuper de cette conversion.

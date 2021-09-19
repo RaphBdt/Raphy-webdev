@@ -1,6 +1,7 @@
 ---
 id: 2
 title: Méthodologie BEM
+part: 1
 ---
 
 **BEM** est l'acronyme de *bloc, élément, modificateur*.

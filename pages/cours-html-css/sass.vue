@@ -5,7 +5,19 @@
     <h3>Structurer et organiser le code</h3>
     <ol>
       <li v-for="(lesson, idx) in lessons" :key="idx">
-        <nuxt-link :to="{ name: 'cours-html-css-cours-sass-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
+        <nuxt-link v-if="lesson.part === 1" :to="{ name: 'cours-html-css-cours-sass-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
+      </li>
+    </ol>
+    <h2>Créer du code maintenable</h2>
+    <ol>
+      <li v-for="(lesson, idx) in lessons" :key="idx">
+        <nuxt-link v-if="lesson.part === 2" :to="{ name: 'cours-html-css-cours-sass-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
+      </li>
+    </ol>
+    <h2>Optimiser le code</h2>
+    <ol>
+      <li v-for="(lesson, idx) in lessons" :key="idx">
+        <nuxt-link v-if="lesson.part === 3" :to="{ name: 'cours-html-css-cours-sass-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
       </li>
     </ol>
   </article>

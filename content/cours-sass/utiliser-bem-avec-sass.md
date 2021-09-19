@@ -1,7 +1,7 @@
 ---
 id: 6
 title: Utiliser BEM avec SASS
-
+part: 1
 ---
 Voici comment il est nécessaire d'établir son code CSS. Le principe est de combiner la méthodologie BEM et le nesting SASS :
 
