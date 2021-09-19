@@ -27,17 +27,17 @@ Notre code doit dire : Si la luminosité de la couleur passée en argument est i
 
 les opérateurs de comparaison :
 
-==
+"=="
 
-!=
+"!="
 
->
+">"
 
-<
+"<"
 
->=
+">="
 
-<=
+"<="
 
 On peut enchaîner deux conditions en utilisant **and** :
 
