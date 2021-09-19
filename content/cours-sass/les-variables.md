@@ -6,37 +6,21 @@ title: Les variables
 ---
 Pour déclarer une variable dans Sass, il suffit d'utiliser le symbole **$**.
 
-\`\`\`scss
-
- $color-primary: #15DEA5;
-
-\`\`\`
+    $color-primary: #15DEA5;
 
 On peut bien évidemment à la place d'une couleur mettre du padding, une taille de texte...
 
 Ensuite, il suffit d'utiliser notre variable dans le code.
 
-\`\`\`scss
-
- .form__field textarea {
-
- width: 100%;
-
- color: $color-primary;
-
- background: #001534;
-
- border: 0.1rem solid $color-primary;
-
- outline: none;
-
- padding: 1.5rem;
-
- margin-bottom: 0.75rem;
-
- }
-
-\`\`\`
+    .form__field textarea {
+      width: 100%;
+      color: $color-primary;
+      background: #001534;
+      border: 0.1rem solid $color-primary;
+      outline: none;
+      padding: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
 
 **Point important :** Dans cette situation, notre variable correspond à du vert menthe, mais ça aurait été une erreur d'appeler cette variable <em>$mint</em> (vert menthe en anglais). Si nous souhaitons changer les couleurs de notre site dans le futur, cela veut dire qu'il faudra rechanger toutes les variables dans le code. La solution est donc de donner comme nom le rôle de la variable (_$color-primary_, _$font-size-h1_...).
 
