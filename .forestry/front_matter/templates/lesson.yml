@@ -8,5 +8,16 @@ fields:
 - type: text
   name: title
   label: title
+- name: part
+  type: number
+  label: part
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
 pages:
 - content/cours-sass/utiliser-bem-avec-sass.md
