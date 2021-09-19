@@ -27,7 +27,7 @@ Le problème avec les mixins c'est qu'une fois le CSS compilé, il y a beaucoup 
     input {
       	@include .typography;
     }
-
+    
     h1 {
         color: #15dea5;
         font-size: 2rem;
@@ -107,3 +107,5 @@ Sass a encore une fois la solution car il a un placeholder intégré. Il se mat�
     input {
       	@extend %typography;
     }
+
+Ainsi, on voit tout de suite que _%typography_ sert à étendre d'autres éléments.
