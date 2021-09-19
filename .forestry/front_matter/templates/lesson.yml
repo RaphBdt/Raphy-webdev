@@ -20,4 +20,5 @@ fields:
     step: 
     required: true
 pages:
+- content/cours-sass/les-variables.md
 - content/cours-sass/utiliser-bem-avec-sass.md
