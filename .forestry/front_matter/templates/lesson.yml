@@ -21,6 +21,7 @@ fields:
     required: true
 pages:
 - content/cours-sass/les-extensions.md
+- content/cours-sass/les-fonctions.md
 - content/cours-sass/les-mixins.md
 - content/cours-sass/les-variables.md
 - content/cours-sass/mixins-ou-extensions.md
