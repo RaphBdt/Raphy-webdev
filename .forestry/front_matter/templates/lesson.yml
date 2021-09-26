@@ -20,6 +20,7 @@ fields:
     step: 
     required: true
 pages:
+- content/cours-sass/autoprefixer.md
 - content/cours-sass/creer-et-utiliser-des-fonctions.md
 - content/cours-sass/installer-sass.md
 - content/cours-sass/integrer-les-types-de-donnees-sass.md
