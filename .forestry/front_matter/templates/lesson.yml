@@ -22,6 +22,7 @@ fields:
 pages:
 - content/cours-sass/creer-et-utiliser-des-fonctions.md
 - content/cours-sass/installer-sass.md
+- content/cours-sass/integrer-les-types-de-donnees-sass.md
 - content/cours-sass/les-conditions.md
 - content/cours-sass/les-extensions.md
 - content/cours-sass/les-fonctions.md
