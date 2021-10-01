@@ -9,6 +9,9 @@
                 <b-col lg=4 class="mb-3">
                     <lesson-card title="API REST">Utiliser des API REST ; formuler des requêtes et envoyer des réponses ; concevoir une API REST.</lesson-card>
                 </b-col>
+                <!-- <b-col lg=4 class="mb-3">
+                    <lesson-card title="Conception objet Damien" url="/cours-autres/conception-objet">Cours à MyDigitalSchool avec Damien</lesson-card>
+                </b-col> -->
             </b-row>
         </b-container>
     </div>
