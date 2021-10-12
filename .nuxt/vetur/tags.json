@@ -1,0 +1,11 @@
+{
+  "Button": {
+    "description": "Auto imported from components/Button.vue"
+  },
+  "LessonCard": {
+    "description": "Auto imported from components/LessonCard.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/Navbar.vue"
+  }
+}
