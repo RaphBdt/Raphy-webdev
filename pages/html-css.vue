@@ -13,7 +13,7 @@
                     <lesson-card title="Animations CSS" url="/cours-html-css/animations-css">Animations de base ; transitions, rotations, opacité ; et keyframes.</lesson-card>
                 </b-col>
                 <b-col lg=4 class="mb-3">
-                    <lesson-card title="Bootstrap" type="important" url="bootstrap">Avantages de Bootstrap ; le responsive ; les composants UI ; UX ; fonctionnalités et thèmes personnalisés.</lesson-card>
+                    <lesson-card title="Bootstrap" type="important" url="/cours-html-css/bootstrap">Avantages de Bootstrap ; le responsive ; les composants UI ; UX ; fonctionnalités et thèmes personnalisés.</lesson-card>
                 </b-col>
             </b-row>
         </b-container>
