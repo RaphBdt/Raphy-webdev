@@ -37,6 +37,7 @@ pages:
 - content/cours-animations-css/utiliser-les-proprietes-de-l-animation-css.md
 - content/cours-bootstrap/avantages-et-desavantages-de-bootstrap.md
 - content/cours-bootstrap/decomposer-la-structure-des-pages.md
+- content/cours-bootstrap/implementer-la-structure-de-pages.md
 - content/cours-bootstrap/l-importance-du-mobile.md
 - content/cours-sass/autoprefixer.md
 - content/cours-sass/creer-et-utiliser-des-fonctions.md
