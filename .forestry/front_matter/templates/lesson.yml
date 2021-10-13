@@ -20,6 +20,7 @@ fields:
     step: 
     required: true
 pages:
+- content/cours-animations-css/animations-avec-la-propriete-transform.md
 - content/cours-animations-css/animations-avec-plusieurs-proprietes.md
 - content/cours-animations-css/bouton-anime.md
 - content/cours-animations-css/les-12-principes-pour-creer-de-belles-animations.md
