@@ -31,6 +31,7 @@ pages:
 - content/cours-animations-css/modifier-acceleration-et-deceleration.md
 - content/cours-animations-css/modifier-le-point-d-ancrage.md
 - content/cours-animations-css/optimiser-les-performances-du-navigateur-pour-nos-animations.md
+- content/cours-animations-css/utiliser-les-proprietes-de-l-animation-css.md
 - content/cours-sass/autoprefixer.md
 - content/cours-sass/creer-et-utiliser-des-fonctions.md
 - content/cours-sass/installer-sass.md
