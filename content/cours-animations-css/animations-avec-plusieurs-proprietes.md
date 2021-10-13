@@ -1,5 +1,5 @@
 ---
-part: 0
+part: 1
 id: 4
 title: Animations avec plusieurs propriétés
 
