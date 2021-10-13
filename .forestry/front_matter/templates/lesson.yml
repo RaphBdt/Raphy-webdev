@@ -21,6 +21,7 @@ fields:
     required: true
 pages:
 - content/cours-animations-css/bouton-anime.md
+- content/cours-animations-css/les-12-principes-pour-creer-de-belles-animations.md
 - content/cours-animations-css/les-pseudoclasses.md
 - content/cours-sass/autoprefixer.md
 - content/cours-sass/creer-et-utiliser-des-fonctions.md
