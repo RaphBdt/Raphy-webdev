@@ -58,4 +58,4 @@ Autre exemple (un classique) : on veut trois cards de tailles égales, mais elle
         <div class="col-12 col-lg-4">
             INFO CARD 3
         </div>
-    [...] 
+    [...]
