@@ -40,7 +40,7 @@ On a même la possibilité de contrôler le ratio d'affichage :
 * **1:1 :** .embed-responsive-1by1
 
     <div class="embed-responsive embed-responsive-16by9">
-    	<iframe class="embed-responsive-item" src="..." allowfullscreen> </iframe>
+    <iframe class="embed-responsive-item" src="..." allowfullscreen> </iframe>
     </div>
 
 ## Ajouter des icônes
