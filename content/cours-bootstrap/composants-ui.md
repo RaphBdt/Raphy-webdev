@@ -1,5 +1,5 @@
 ---
-part: 1
+part: 3
 id: 6
 title: Composants UI
 
