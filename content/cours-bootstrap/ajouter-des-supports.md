@@ -39,10 +39,6 @@ On a même la possibilité de contrôler le ratio d'affichage :
 * **4:3 :** .embed-responsive-4by3
 * **1:1 :** .embed-responsive-1by1
 
-    <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="..." allowfullscreen> </iframe>
-    </div>
-
 ## Ajouter des icônes
 
 Pour nous acquérir les icônes, on peut soit utiliser la commande **npm install bootstrap-icons** soit télécharger directement les fichiers sources du dossier [GitHub](https://github.com/twbs/icons).
