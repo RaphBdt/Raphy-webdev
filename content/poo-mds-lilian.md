@@ -146,3 +146,8 @@ Le constructeur est une _méthode magique_ !
         	$this->luminosite = $luminosite;
         }
     }
+     
+    $lampe1 = new Lampe(250, 'droit');
+    $lampe2 = new Lampe(1500, 'droit');
+    $lampe3 = new Lampe(800, 'angle');
+    $lampe4 = new Lampe(1000, 'angle');
