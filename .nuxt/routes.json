@@ -84,6 +84,13 @@
     "_name": "_3bda2fe6"
   },
   {
+    "name": "cours-javascript-vuejs",
+    "path": "/cours-javascript/vuejs",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/vuejs.vue",
+    "chunkName": "pages/cours-javascript/vuejs",
+    "_name": "_0d2986c6"
+  },
+  {
     "name": "cours-autres-cours-conception-objet-damien-slug",
     "path": "/cours-autres/cours-conception-objet-damien/:slug?",
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-conception-objet-damien/_slug.vue",
@@ -138,6 +145,13 @@
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-javascript-web/_slug.vue",
     "chunkName": "pages/cours-javascript/cours-javascript-web/_slug",
     "_name": "_48c161ab"
+  },
+  {
+    "name": "cours-javascript-cours-vuejs-slug",
+    "path": "/cours-javascript/cours-vuejs/:slug?",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-vuejs/_slug.vue",
+    "chunkName": "pages/cours-javascript/cours-vuejs/_slug",
+    "_name": "_20c2a9fe"
   },
   {
     "name": "index",

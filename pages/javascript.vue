@@ -9,7 +9,7 @@
                 <b-col lg=4 class="mb-3" url="/cours-javascript/full-stack">
                     <lesson-card title="Full stack" type="important">Créer un serveur Express simple ; créer une API RESTfull ; mettre en place un système d'authentification ; ajouter une gestion des fichiers utilisateurs.</lesson-card>
                 </b-col>
-                <b-col lg=4 class="mb-3">
+                <b-col lg=4 class="mb-3" url="/cours-javascript/vuejs">
                     <lesson-card title="Vue.js" type="important">Construire une première application Vue.js ; Vue CLI ; créer des composants réutilisables ; gérer les données de l'application.</lesson-card>
                 </b-col>
             </b-row>

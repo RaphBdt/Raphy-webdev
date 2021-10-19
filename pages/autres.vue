@@ -7,9 +7,6 @@
                     <lesson-card type="important" title="Symfony">Première application ; Twig, Doctrine, ORM ; et mise en production.</lesson-card>
                 </b-col>
                 <b-col lg=4 class="mb-3">
-                    <lesson-card type="important" title="API REST">Utiliser des API REST ; formuler des requêtes et envoyer des réponses ; concevoir une API REST.</lesson-card>
-                </b-col>
-                <b-col lg=4 class="mb-3">
                     <lesson-card title="Conception objet" url="/cours-autres/conception-objet">Notions clés du développement web. Cours réalisé par Damien pour MyDigitalSchool.</lesson-card>
                 </b-col>
                 <b-col lg=4 class="mb-3">
