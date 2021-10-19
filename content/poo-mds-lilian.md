@@ -259,3 +259,51 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
     // Résultat :
     // $start : 19/10/2021
     // $end : 21/10/2021
+
+## Comparer des objets 
+
+    <?php
+     
+    class A
+    {
+        public $attribut1;
+        public $attribut2;
+    }
+     
+    // On crée deux objets parfaitement identique
+    $a = new A;
+    $a->attribut1 = 'attribut1';
+    $a->attribut2 = 'attribut2';
+     
+    $b = new A;
+    $b->attribut1 = 'attribut1';
+    $b->attribut2 = 'attribut2';
+     
+    $c = $a;
+     
+    ($a === $b) ? print_r('$a === $b') : print_r('$a !== $b') ; // Ce n'est pas égal car on a trois = et que ce sont des instances différentes
+    echo PHP_EOL;
+    ($a === $c) ? print_r('$a === $c') : print_r('$a !== $c') ;
+
+## Les méthodes magiques
+
+## Constructor, destructor
+
+    Class MaClasse
+    {
+        // La màthode magique __construct est appelée lors de l'instanciation de MaClasse, à la création de l'objet
+        // On l'appelle le constructeur
+        public function __construct()
+        {
+            echo 'Construction de MaClasse / ';
+        }
+     
+        // La méthode magique __desctruct est appelée lors de la destruction de l'objet
+        // On l'appelle le destructeur
+        public function __destruct()
+        {
+            echo 'Desctruction de MaClasse';
+        }
+    }
+     
+    $obj = new MaClasse(); // Affiche "Contruction de MaClasse / Destruction de MaClasse"
