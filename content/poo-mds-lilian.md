@@ -93,3 +93,64 @@ Principe d'encapsulation :
      
     echo $lampe1->getLuminosite(); // Affiche 250;
     echo $lampe2->getLuminosite(); // Affiche 1500;
+
+**Les déclarations de type**
+
+L'idée c'est de contraindre le retour de nos méthodes. 
+
+    	
+    class Lampe
+    {
+        private string $pied;
+        private int $luminosite;
+        
+        public function setPied(string $pied): void
+        {
+        	$this->pied = $pied;
+        }
+        
+        public function setLuminosite(int $luminosite): void
+        {
+        	$this->luminosite = $luminosite;
+        }
+    }
+     
+    $lampe1 = new Lampe();
+    $lampe1->setLuminosite(250); // Ok
+     
+    $lampe2 = new Lampe();
+    $lampe2->setLuminosite('A'); // Exception TypeError lancée
+
+**Le constructeur**
+
+    class Lampe
+    {
+        private string $pied;
+        private int $luminosite;
+        
+        public function setPied(string $pied): void
+        {
+        	$this->pied = $pied;
+        }
+        
+        public function setLuminosite(int $luminosite): void
+        {
+        	$this->luminosite = $luminosite;
+        }
+    }
+     
+    $lampe1 = new Lampe();
+    $lampe1->setLuminosite(250);
+    $lampe1->setPied('droit');
+     
+    $lampe2 = new Lampe();
+    $lampe2->setLuminosite(1500);
+    $lampe2->setPied('droit');
+     
+    $lampe3 = new Lampe();
+    $lampe3->setLuminosite(800);
+    $lampe3->setPied('angle');
+     
+    $lampe4 = new Lampe();
+    $lampe4->setLuminosite(1000);
+    $lampe4->setPied('angle');
