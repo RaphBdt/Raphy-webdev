@@ -213,3 +213,17 @@ Le constructeur est une _méthode magique_ !
     }
      
     echo MaClasse::$text; // Affiche "Hello World"
+
+Pour accéder à un attribut statique dans une méthode statique, il faut utiliser le mot clé self :
+
+    class MaClasse
+    {
+        private static string $text = 'Hello World';
+     
+        public static function something(): string
+        {
+            echo self::$text;
+        }
+    }
+     
+    MaClasse::something(); // Affiche Hello World
