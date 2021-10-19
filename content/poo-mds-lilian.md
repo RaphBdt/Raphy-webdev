@@ -13,7 +13,7 @@ title: POO MDS Lilian
         
         public function eclairer()
         {
-        
+        	echo 'La pièce est maintenant allumée';
         }
         
         public function clignoter()
@@ -21,3 +21,7 @@ title: POO MDS Lilian
         
         }
     }
+     
+    $lampe = new Lampe(); // Instancie la classe
+    $lampe->pied = 'Droit';
+    $lampe->eclairer(); // Affiche "La pièce est maintenant allumée"
