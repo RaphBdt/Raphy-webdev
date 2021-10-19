@@ -48,6 +48,7 @@ pages:
 - content/cours-bootstrap/les-formulaires.md
 - content/cours-bootstrap/mise-en-page-responsive.md
 - content/cours-bootstrap/personnaliser-les-fonctionnalites.md
+- content/cours-git-et-github/corriger-les-erreurs-sur-le-depot-distant.md
 - content/cours-git-et-github/decouvrir-le-controle-de-versions.md
 - content/cours-git-et-github/demarrer-un-projet-avec-github.md
 - content/cours-git-et-github/installer-git.md
