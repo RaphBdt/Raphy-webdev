@@ -150,3 +150,47 @@ Le constructeur est une _méthode magique_ !
     $lampe2 = new Lampe('droit', 1500);
     $lampe3 = new Lampe('angle', 800);
     $lampe4 = new Lampe('angle', 1000);
+
+## Les constantes de classe
+
+    class Character
+    {
+        private int $strength;
+        private int $xp = 0;
+        
+        const LOW_STRENGTH = 10;
+        const MEDIUM_STRENGTH = 50;
+        const HIGH_STRENGTH = 90;
+     
+        public function __construct(int $strength)
+        {
+            $this->strength = $strength;
+        }
+     
+        public function getStrength(): int
+        {
+            return $this->strength;
+        }
+     
+        public function getXp(): int
+        {
+            return $this->xp;
+        }
+     
+        public function setXp(int $xp): void
+        {
+            $this->xp = $xp;
+        }
+     
+        public function gainXp(): void
+        {
+            $this->xp += 1; // Equivalent de $this->experience = $this->experience + 1 OU $this->experience++;
+            if ($this->xp == 5) {
+                $this->strength += 1;
+                $this->xp = 0;
+            }
+        }
+    }
+     
+    $char = new Character(Character::HIGH_STRENGTH);
+    echo $char->getStrength(); // Affiche 90;
