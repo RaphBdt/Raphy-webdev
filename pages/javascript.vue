@@ -6,7 +6,7 @@
                 <b-col lg=4 class="mb-3">
                     <lesson-card title="JavaScript pour le web" type="important" url="/cours-javascript/javascript-web">Manipuler le DOM ; communiquer avec un service web grâce à une API ; programmation asynchrone ; et mettre en place les bons outils pour travailler.</lesson-card>
                 </b-col>
-                <b-col lg=4 class="mb-3">
+                <b-col lg=4 class="mb-3" url="/cours-javascript/full-stack">
                     <lesson-card title="Full stack" type="important">Créer un serveur Express simple ; créer une API RESTfull ; mettre en place un système d'authentification ; ajouter une gestion des fichiers utilisateurs.</lesson-card>
                 </b-col>
                 <b-col lg=4 class="mb-3">

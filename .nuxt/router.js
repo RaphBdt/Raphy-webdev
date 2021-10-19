@@ -14,6 +14,7 @@ const _24ba78d8 = () => interopDefault(import('../pages/cours-git-github/le-term
 const _346c110a = () => interopDefault(import('../pages/cours-html-css/animations-css.vue' /* webpackChunkName: "pages/cours-html-css/animations-css" */))
 const _96bbbcce = () => interopDefault(import('../pages/cours-html-css/bootstrap.vue' /* webpackChunkName: "pages/cours-html-css/bootstrap" */))
 const _7e95f553 = () => interopDefault(import('../pages/cours-html-css/sass.vue' /* webpackChunkName: "pages/cours-html-css/sass" */))
+const _3cb0ec63 = () => interopDefault(import('../pages/cours-javascript/full-stack.vue' /* webpackChunkName: "pages/cours-javascript/full-stack" */))
 const _3bda2fe6 = () => interopDefault(import('../pages/cours-javascript/javascript-web.vue' /* webpackChunkName: "pages/cours-javascript/javascript-web" */))
 const _1a7e97f8 = () => interopDefault(import('../pages/cours-autres/cours-conception-objet-damien/_slug.vue' /* webpackChunkName: "pages/cours-autres/cours-conception-objet-damien/_slug" */))
 const _7bac6b86 = () => interopDefault(import('../pages/cours-git-github/cours-git-et-github/_slug.vue' /* webpackChunkName: "pages/cours-git-github/cours-git-et-github/_slug" */))
@@ -21,6 +22,7 @@ const _079c2410 = () => interopDefault(import('../pages/cours-git-github/cours-l
 const _ba346030 = () => interopDefault(import('../pages/cours-html-css/cours-animations-css/_slug.vue' /* webpackChunkName: "pages/cours-html-css/cours-animations-css/_slug" */))
 const _5de7fd11 = () => interopDefault(import('../pages/cours-html-css/cours-bootstrap/_slug.vue' /* webpackChunkName: "pages/cours-html-css/cours-bootstrap/_slug" */))
 const _a6e9cd9e = () => interopDefault(import('../pages/cours-html-css/cours-sass/_slug.vue' /* webpackChunkName: "pages/cours-html-css/cours-sass/_slug" */))
+const _7eb0d701 = () => interopDefault(import('../pages/cours-javascript/cours-full-stack/_slug.vue' /* webpackChunkName: "pages/cours-javascript/cours-full-stack/_slug" */))
 const _48c161ab = () => interopDefault(import('../pages/cours-javascript/cours-javascript-web/_slug.vue' /* webpackChunkName: "pages/cours-javascript/cours-javascript-web/_slug" */))
 const _3bb0a2e8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -76,6 +78,10 @@ export const routerOptions = {
     component: _7e95f553,
     name: "cours-html-css-sass"
   }, {
+    path: "/cours-javascript/full-stack",
+    component: _3cb0ec63,
+    name: "cours-javascript-full-stack"
+  }, {
     path: "/cours-javascript/javascript-web",
     component: _3bda2fe6,
     name: "cours-javascript-javascript-web"
@@ -103,6 +109,10 @@ export const routerOptions = {
     path: "/cours-html-css/cours-sass/:slug?",
     component: _a6e9cd9e,
     name: "cours-html-css-cours-sass-slug"
+  }, {
+    path: "/cours-javascript/cours-full-stack/:slug?",
+    component: _7eb0d701,
+    name: "cours-javascript-cours-full-stack-slug"
   }, {
     path: "/cours-javascript/cours-javascript-web/:slug?",
     component: _48c161ab,

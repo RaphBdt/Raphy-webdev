@@ -29,7 +29,7 @@
     <h3>Mettre en place les bons outils pour travailler</h3>
     <ol>
       <span v-for="(lesson, idx) in lessons" :key="idx">
-        <li v-if="lesson.part === 3">
+        <li v-if="lesson.part === 4">
           <nuxt-link :to="{ name: 'cours-javascript-cours-javascript-web-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
         </li>
       </span>

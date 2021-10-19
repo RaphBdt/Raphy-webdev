@@ -70,6 +70,13 @@
     "_name": "_7e95f553"
   },
   {
+    "name": "cours-javascript-full-stack",
+    "path": "/cours-javascript/full-stack",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/full-stack.vue",
+    "chunkName": "pages/cours-javascript/full-stack",
+    "_name": "_3cb0ec63"
+  },
+  {
     "name": "cours-javascript-javascript-web",
     "path": "/cours-javascript/javascript-web",
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/javascript-web.vue",
@@ -117,6 +124,13 @@
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/cours-sass/_slug.vue",
     "chunkName": "pages/cours-html-css/cours-sass/_slug",
     "_name": "_a6e9cd9e"
+  },
+  {
+    "name": "cours-javascript-cours-full-stack-slug",
+    "path": "/cours-javascript/cours-full-stack/:slug?",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-full-stack/_slug.vue",
+    "chunkName": "pages/cours-javascript/cours-full-stack/_slug",
+    "_name": "_7eb0d701"
   },
   {
     "name": "cours-javascript-cours-javascript-web-slug",
