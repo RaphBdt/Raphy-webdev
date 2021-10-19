@@ -227,3 +227,35 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
     }
      
     MaClasse::something(); // Affiche Hello World
+
+## Analysons un objet
+
+    	
+    // On crée une instance de la classe DateTime. Ainsi, $start est un objet de type DateTime
+    // $start ne contient pas l'objet, mais seulement l'identifiant de cet objet
+    $start = new DateTime();
+     
+    // On assigne l'identifiant de $start à $end
+    // En conséquence, $end et $start ont le même identifiant et représente donc le même objet !
+    $end = $start;
+     
+    // On modifie l'objet représenté par l'identifiant contenu dans $end
+    // $start représentant le même objet, "on modifie" également $start !
+    // En réalité, $start n'étant qu'un identifiant, il n'est pas modifié évidemment. Seulement son objet vers lequel il pointe l'est.
+    $end->add(new DateInterval('P2D'));
+
+**Pour résoudre ce problème de référence :**
+
+    $start = new DateTime();
+     
+    // On clone le contenu de $start dans $end
+    $end = clone $start;
+    $end->add(new DateInterval('P2D'));
+     
+    // On affiche les deux dates
+    echo '$start : ' . $start->format('d/m/Y') . PHP_EOL;
+    echo '$end : ' . $end->format('d/m/Y');
+     
+    // Résultat :
+    // $start : 19/10/2021
+    // $end : 21/10/2021
