@@ -50,6 +50,7 @@ pages:
 - content/cours-bootstrap/personnaliser-les-fonctionnalites.md
 - content/cours-git-et-github/decouvrir-le-controle-de-versions.md
 - content/cours-git-et-github/demarrer-un-projet-avec-github.md
+- content/cours-git-et-github/installer-git.md
 - content/cours-git-et-github/les-depots-distants-sur-github.md
 - content/cours-le-terminal/aller-plus-loin-avec-de-nouvelles-commandes.md
 - content/cours-le-terminal/decouverte-du-terminal.md
