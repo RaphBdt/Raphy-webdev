@@ -4,12 +4,6 @@
             <h1 class="text-center mb-3">JavaScript</h1>
             <b-row>
                 <b-col lg=4 class="mb-3">
-                    <lesson-card title="Les algorithmes" type="important">Pas besoin de fiche de révision pour ce cours... Aller directement sur OpenClassrooms.</lesson-card>
-                </b-col>
-                <b-col lg=4 class="mb-3">
-                    <lesson-card title="Initiation JavaScript" type="important">Ce cours est disponible en format PDF dans les assets.</lesson-card>
-                </b-col>
-                <b-col lg=4 class="mb-3">
                     <lesson-card title="JavaScript pour le web" type="important">Manipuler le DOM ; communiquer avec un service web grâce à une API ; programmation asynchrone ; et mettre en place les bons outils pour travailler.</lesson-card>
                 </b-col>
                 <b-col lg=4 class="mb-3">
