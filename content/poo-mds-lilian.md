@@ -46,3 +46,25 @@ Principe d'encapsulation :
      
     $lampe = new Lampe();
     $lampe->pied = 'Droit'; // Erreur fatale
+
+**Les accesseurs et les mutateurs**
+
+    class Lampe
+    {
+        private $pied;
+        private $luminosite = '250 lumen';
+        
+        public function getPied()
+        {
+        	return $this->pied;
+        }
+        
+        public function getLuminosite()
+        {
+        	return $this->luminosite;
+        }
+    }
+     
+    $lampe = new Lampe();
+    $luminosite = $lampe->getLuminosite();
+    echo $luminosite; // Affiche 250 lumen;
