@@ -53,6 +53,7 @@ pages:
 - content/cours-git-et-github/installer-git.md
 - content/cours-git-et-github/les-branches.md
 - content/cours-git-et-github/les-depots-distants-sur-github.md
+- content/cours-git-et-github/pratiquer-et-corriger-les-erreurs-sur-un-depoter-local.md
 - content/cours-git-et-github/travailler-a-partir-d-un-nouveau-projet.md
 - content/cours-git-et-github/travailler-a-partir-d-un-projet-existant.md
 - content/cours-le-terminal/aller-plus-loin-avec-de-nouvelles-commandes.md
