@@ -25,3 +25,24 @@ title: POO MDS Lilian
     $lampe = new Lampe(); // Instancie la classe
     $lampe->pied = 'Droit';
     $lampe->eclairer(); // Affiche "La pièce est maintenant allumée"
+
+Principe d'encapsulation :
+
+    class Lampe
+    {
+        private $pied;
+        private $luminosite = '250 lumen';
+        
+        public function eclairer()
+        {
+        	echo 'La pièce est maintenant allumée';
+        }
+        
+        public function clignoter()
+        {
+        
+        }
+    }
+     
+    $lampe = new Lampe();
+    $lampe->pied = 'Droit'; // Erreur fatale
