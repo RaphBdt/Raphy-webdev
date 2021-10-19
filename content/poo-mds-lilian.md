@@ -90,3 +90,6 @@ Principe d'encapsulation :
      
     $lampe2 = new Lampe();
     $lampe2->setLuminosite(1500);
+     
+    echo $lampe1->getLuminosite(); // Affiche 250;
+    echo $lampe2->getLuminosite(); // Affiche 1500;
