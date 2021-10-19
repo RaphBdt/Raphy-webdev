@@ -4,6 +4,8 @@ id: 1
 title: POO MDS Lilian
 
 ---
+## Créons notre première classe
+
     class Lampe
     {
         public $pied;
