@@ -311,9 +311,6 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
 
 ### Accesseurs et mutateurs
 
-    	
-    <?php
-     
     Class MaClasse
     {
         public $public;
