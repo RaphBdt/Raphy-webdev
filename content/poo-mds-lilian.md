@@ -287,7 +287,7 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
 
 ## Les méthodes magiques
 
-## Constructor, destructor
+### Constructor, destructor
 
     Class MaClasse
     {
@@ -307,3 +307,38 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
     }
      
     $obj = new MaClasse(); // Affiche "Contruction de MaClasse / Destruction de MaClasse"
+    
+
+### Accesseurs et mutateurs
+
+    	
+    <?php
+     
+    Class MaClasse
+    {
+        public $public;
+        private $prive;
+     
+        // La méthode magique __set est appelée lorsque qu'on l'on essaie d'attribuer une valeur
+        // à un attribut non existant ou auquel on ne peut accéder
+        public function __set($attribut, $valeur)
+        {
+            echo 'On a tenté d\'assigner à l\'attribut "' . $attribut . '" la valeur "' . $valeur . '"' . PHP_EOL;
+        }
+     
+        // La méthode magique __get est appelée lorsque l'on essaie d'accéder à un attribut
+        // non existant ou auquel on ne peut accéder
+        public function __get($attribut)
+        {
+            echo 'L\'attribut "' . $attribut . '" n\'existe pas ou n\'est pas accessible';
+        }
+    }
+     
+    $obj = new MaClasse();
+     
+    $obj->public = 'Public';
+    echo $obj->public.PHP_EOL; // Affiche "Public"
+     
+    $obj->prive = 'Privé'; // Affiche "On a tenté d'assigner à l'attribut "prive" la valeur "Privé"
+    echo $obj->prive.PHP_EOL; // Affiche "L'attribut "prive" n'existe pas ou n'est pas accessible"
+    echo $obj->attributNonExistant.PHP_EOL; // Affiche "L'attribut "attributNonExistant" n'existe pas ou n'est pas accessible"
