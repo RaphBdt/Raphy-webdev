@@ -26,7 +26,7 @@ title: POO MDS Lilian
     $lampe->pied = 'Droit';
     $lampe->eclairer(); // Affiche "La pièce est maintenant allumée"
 
-Principe d'encapsulation :
+### Principe d'encapsulation
 
     class Lampe
     {
@@ -47,7 +47,7 @@ Principe d'encapsulation :
     $lampe = new Lampe();
     $lampe->pied = 'Droit'; // Erreur fatale
 
-**Les accesseurs et les mutateurs**
+### **Les accesseurs et les mutateurs**
 
     class Lampe
     {
@@ -94,7 +94,7 @@ Principe d'encapsulation :
     echo $lampe1->getLuminosite(); // Affiche 250;
     echo $lampe2->getLuminosite(); // Affiche 1500;
 
-**Les déclarations de type**
+### Les déclarations de type
 
 L'idée c'est de contraindre le retour de nos méthodes.
 
@@ -120,7 +120,7 @@ L'idée c'est de contraindre le retour de nos méthodes.
     $lampe2 = new Lampe();
     $lampe2->setLuminosite('A'); // Exception TypeError lancée
 
-**Le constructeur**
+### Le constructeur
 
 Le constructeur est une _méthode magique_ !
 
@@ -151,7 +151,7 @@ Le constructeur est une _méthode magique_ !
     $lampe3 = new Lampe('angle', 800);
     $lampe4 = new Lampe('angle', 1000);
 
-## Les constantes de classe
+### Les constantes de classe
 
     class Character
     {
@@ -194,3 +194,22 @@ Le constructeur est une _méthode magique_ !
      
     $char = new Character(Character::HIGH_STRENGTH);
     echo $char->getStrength(); // Affiche 90;
+
+### Les attributs et méthodes statiques
+
+    class MaClasse
+    {
+        public static function something(): string
+        {
+            echo 'Hello Word';
+        }
+    }
+     
+    MaClasse::something(); // Affiche "Hello World"
+
+    class MaClasse
+    {
+        public static string $text = 'Hello World';
+    }
+     
+    echo MaClasse::$text; // Affiche "Hello World"
