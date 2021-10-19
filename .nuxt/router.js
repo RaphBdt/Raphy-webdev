@@ -9,6 +9,8 @@ const _495f02f4 = () => interopDefault(import('../pages/git-github.vue' /* webpa
 const _fd6018d2 = () => interopDefault(import('../pages/html-css.vue' /* webpackChunkName: "pages/html-css" */))
 const _2027c6a3 = () => interopDefault(import('../pages/javascript.vue' /* webpackChunkName: "pages/javascript" */))
 const _1255afbf = () => interopDefault(import('../pages/cours-autres/conception-objet.vue' /* webpackChunkName: "pages/cours-autres/conception-objet" */))
+const _19461d6a = () => interopDefault(import('../pages/cours-autres/developpement-back.vue' /* webpackChunkName: "pages/cours-autres/developpement-back" */))
+const _236087c5 = () => interopDefault(import('../pages/cours-autres/symfony.vue' /* webpackChunkName: "pages/cours-autres/symfony" */))
 const _7ca68c0e = () => interopDefault(import('../pages/cours-git-github/git-et-github.vue' /* webpackChunkName: "pages/cours-git-github/git-et-github" */))
 const _24ba78d8 = () => interopDefault(import('../pages/cours-git-github/le-terminal.vue' /* webpackChunkName: "pages/cours-git-github/le-terminal" */))
 const _346c110a = () => interopDefault(import('../pages/cours-html-css/animations-css.vue' /* webpackChunkName: "pages/cours-html-css/animations-css" */))
@@ -18,6 +20,8 @@ const _3cb0ec63 = () => interopDefault(import('../pages/cours-javascript/full-st
 const _3bda2fe6 = () => interopDefault(import('../pages/cours-javascript/javascript-web.vue' /* webpackChunkName: "pages/cours-javascript/javascript-web" */))
 const _0d2986c6 = () => interopDefault(import('../pages/cours-javascript/vuejs.vue' /* webpackChunkName: "pages/cours-javascript/vuejs" */))
 const _1a7e97f8 = () => interopDefault(import('../pages/cours-autres/cours-conception-objet-damien/_slug.vue' /* webpackChunkName: "pages/cours-autres/cours-conception-objet-damien/_slug" */))
+const _6ed32e08 = () => interopDefault(import('../pages/cours-autres/cours-developpement-back/_slug.vue' /* webpackChunkName: "pages/cours-autres/cours-developpement-back/_slug" */))
+const _57155b86 = () => interopDefault(import('../pages/cours-autres/cours-symfony/_slug.vue' /* webpackChunkName: "pages/cours-autres/cours-symfony/_slug" */))
 const _7bac6b86 = () => interopDefault(import('../pages/cours-git-github/cours-git-et-github/_slug.vue' /* webpackChunkName: "pages/cours-git-github/cours-git-et-github/_slug" */))
 const _079c2410 = () => interopDefault(import('../pages/cours-git-github/cours-le-terminal/_slug.vue' /* webpackChunkName: "pages/cours-git-github/cours-le-terminal/_slug" */))
 const _ba346030 = () => interopDefault(import('../pages/cours-html-css/cours-animations-css/_slug.vue' /* webpackChunkName: "pages/cours-html-css/cours-animations-css/_slug" */))
@@ -60,6 +64,14 @@ export const routerOptions = {
     component: _1255afbf,
     name: "cours-autres-conception-objet"
   }, {
+    path: "/cours-autres/developpement-back",
+    component: _19461d6a,
+    name: "cours-autres-developpement-back"
+  }, {
+    path: "/cours-autres/symfony",
+    component: _236087c5,
+    name: "cours-autres-symfony"
+  }, {
     path: "/cours-git-github/git-et-github",
     component: _7ca68c0e,
     name: "cours-git-github-git-et-github"
@@ -95,6 +107,14 @@ export const routerOptions = {
     path: "/cours-autres/cours-conception-objet-damien/:slug?",
     component: _1a7e97f8,
     name: "cours-autres-cours-conception-objet-damien-slug"
+  }, {
+    path: "/cours-autres/cours-developpement-back/:slug?",
+    component: _6ed32e08,
+    name: "cours-autres-cours-developpement-back-slug"
+  }, {
+    path: "/cours-autres/cours-symfony/:slug?",
+    component: _57155b86,
+    name: "cours-autres-cours-symfony-slug"
   }, {
     path: "/cours-git-github/cours-git-et-github/:slug?",
     component: _7bac6b86,

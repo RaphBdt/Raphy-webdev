@@ -35,6 +35,20 @@
     "_name": "_1255afbf"
   },
   {
+    "name": "cours-autres-developpement-back",
+    "path": "/cours-autres/developpement-back",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/developpement-back.vue",
+    "chunkName": "pages/cours-autres/developpement-back",
+    "_name": "_19461d6a"
+  },
+  {
+    "name": "cours-autres-symfony",
+    "path": "/cours-autres/symfony",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/symfony.vue",
+    "chunkName": "pages/cours-autres/symfony",
+    "_name": "_236087c5"
+  },
+  {
     "name": "cours-git-github-git-et-github",
     "path": "/cours-git-github/git-et-github",
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/git-et-github.vue",
@@ -96,6 +110,20 @@
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-conception-objet-damien/_slug.vue",
     "chunkName": "pages/cours-autres/cours-conception-objet-damien/_slug",
     "_name": "_1a7e97f8"
+  },
+  {
+    "name": "cours-autres-cours-developpement-back-slug",
+    "path": "/cours-autres/cours-developpement-back/:slug?",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-developpement-back/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-developpement-back/_slug",
+    "_name": "_6ed32e08"
+  },
+  {
+    "name": "cours-autres-cours-symfony-slug",
+    "path": "/cours-autres/cours-symfony/:slug?",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-symfony/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-symfony/_slug",
+    "_name": "_57155b86"
   },
   {
     "name": "cours-git-github-cours-git-et-github-slug",
