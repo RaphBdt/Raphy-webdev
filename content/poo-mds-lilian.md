@@ -68,7 +68,7 @@ Principe d'encapsulation :
     $lampe = new Lampe();
     $luminosite = $lampe->getLuminosite();
     echo $luminosite; // Affiche 250 lumen;
-
+    
     class Lampe
     {
         private $pied;
@@ -96,9 +96,8 @@ Principe d'encapsulation :
 
 **Les déclarations de type**
 
-L'idée c'est de contraindre le retour de nos méthodes. 
+L'idée c'est de contraindre le retour de nos méthodes.
 
-    	
     class Lampe
     {
         private string $pied;
@@ -130,7 +129,7 @@ Le constructeur est une _méthode magique_ !
         private string $pied;
         private int $luminosite;
         
-        public function __construct(string $pied, int $luminosite): void
+        public function __construct(string $pied, int $luminosite)
         {
         	$this->pied = $pied;
             $this->luminosite = $luminosite;
@@ -139,7 +138,7 @@ Le constructeur est une _méthode magique_ !
         public function setPied(string $pied): void
         {
         	$this->pied = $pied;
-        }
+        
         
         public function setLuminosite(int $luminosite): void
         {
