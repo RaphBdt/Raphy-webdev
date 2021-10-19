@@ -4,7 +4,7 @@
             <h1 class="text-center mb-3">JavaScript</h1>
             <b-row>
                 <b-col lg=4 class="mb-3">
-                    <lesson-card title="JavaScript pour le web" type="important">Manipuler le DOM ; communiquer avec un service web grâce à une API ; programmation asynchrone ; et mettre en place les bons outils pour travailler.</lesson-card>
+                    <lesson-card title="JavaScript pour le web" type="important" url="/cours-javascript/javascript-web">Manipuler le DOM ; communiquer avec un service web grâce à une API ; programmation asynchrone ; et mettre en place les bons outils pour travailler.</lesson-card>
                 </b-col>
                 <b-col lg=4 class="mb-3">
                     <lesson-card title="Full stack" type="important">Créer un serveur Express simple ; créer une API RESTfull ; mettre en place un système d'authentification ; ajouter une gestion des fichiers utilisateurs.</lesson-card>
