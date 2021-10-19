@@ -123,10 +123,18 @@ L'idée c'est de contraindre le retour de nos méthodes.
 
 **Le constructeur**
 
+Le constructeur est une _méthode magique_ !
+
     class Lampe
     {
         private string $pied;
         private int $luminosite;
+        
+        public function __construct(string $pied, int $luminosite): void
+        {
+        	$this->pied = $pied;
+            $this->luminosite = $luminosite;
+        }
         
         public function setPied(string $pied): void
         {
@@ -138,19 +146,3 @@ L'idée c'est de contraindre le retour de nos méthodes.
         	$this->luminosite = $luminosite;
         }
     }
-     
-    $lampe1 = new Lampe();
-    $lampe1->setLuminosite(250);
-    $lampe1->setPied('droit');
-     
-    $lampe2 = new Lampe();
-    $lampe2->setLuminosite(1500);
-    $lampe2->setPied('droit');
-     
-    $lampe3 = new Lampe();
-    $lampe3->setLuminosite(800);
-    $lampe3->setPied('angle');
-     
-    $lampe4 = new Lampe();
-    $lampe4->setLuminosite(1000);
-    $lampe4->setPied('angle');
