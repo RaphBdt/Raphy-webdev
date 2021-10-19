@@ -147,7 +147,7 @@ Le constructeur est une _méthode magique_ !
         }
     }
      
-    $lampe1 = new Lampe(250, 'droit');
-    $lampe2 = new Lampe(1500, 'droit');
-    $lampe3 = new Lampe(800, 'angle');
-    $lampe4 = new Lampe(1000, 'angle');
+    $lampe1 = new Lampe('droit', 250);
+    $lampe2 = new Lampe('droit', 1500);
+    $lampe3 = new Lampe('angle', 800);
+    $lampe4 = new Lampe('angle', 1000);
