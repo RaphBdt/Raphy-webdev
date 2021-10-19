@@ -68,3 +68,25 @@ Principe d'encapsulation :
     $lampe = new Lampe();
     $luminosite = $lampe->getLuminosite();
     echo $luminosite; // Affiche 250 lumen;
+
+    class Lampe
+    {
+        private $pied;
+        private $luminosite;
+        
+        public function setPied($pied)
+        {
+        	$this->pied = $pied;
+        }
+        
+        public function setLuminosite($luminosite)
+        {
+        	$this->luminosite = $luminosite;
+        }
+    }
+     
+    $lampe1 = new Lampe();
+    $lampe1->setLuminosite(250);
+     
+    $lampe2 = new Lampe();
+    $lampe2->setLuminosite(1500);
