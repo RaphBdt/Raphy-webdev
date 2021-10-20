@@ -64,6 +64,7 @@ pages:
 - content/cours-git-et-github/utiliser-git-reset.md
 - content/cours-javascript-web/acceder-aux-elements-du-dom.md
 - content/cours-javascript-web/comprendre-ce-qu-est-le-dom.md
+- content/cours-javascript-web/comprendre-ce-que-sont-des-api-et-un-service-web.md
 - content/cours-javascript-web/ecouter-des-evenements.md
 - content/cours-javascript-web/modifier-le-dom.md
 - content/cours-javascript-web/recuperer-les-donnees-des-utilisateurs-avec-les-evenements.md
