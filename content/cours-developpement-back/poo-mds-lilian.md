@@ -206,7 +206,7 @@ Le constructeur est une _méthode magique_ !
     }
      
     MaClasse::something(); // Affiche "Hello World"
-
+    
     class MaClasse
     {
         public static string $text = 'Hello World';
@@ -230,7 +230,6 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
 
 ## Analysons un objet
 
-    	
     // On crée une instance de la classe DateTime. Ainsi, $start est un objet de type DateTime
     // $start ne contient pas l'objet, mais seulement l'identifiant de cet objet
     $start = new DateTime();
@@ -260,7 +259,7 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
     // $start : 19/10/2021
     // $end : 21/10/2021
 
-## Comparer des objets 
+## Comparer des objets
 
     <?php
      
@@ -307,7 +306,6 @@ Pour accéder à un attribut statique dans une méthode statique, il faut utilis
     }
      
     $obj = new MaClasse(); // Affiche "Contruction de MaClasse / Destruction de MaClasse"
-    
 
 ### Accesseurs et mutateurs
 
