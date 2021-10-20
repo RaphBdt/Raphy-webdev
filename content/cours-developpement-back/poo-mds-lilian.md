@@ -1,7 +1,7 @@
 ---
-part: 1
-id: 1
-title: POO MDS Lilian
+part: "1"
+id: "1"
+title: Cours 1
 
 ---
 ## Créons notre première classe
