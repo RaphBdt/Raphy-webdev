@@ -167,3 +167,52 @@ Présentation du problème : on veut créer une classe par type de poste au foot
     $obj->levelUp();
     echo $obj->attribut; // Affiche "2"
     echo $obj->test; // Affiche "2"
+
+**Quand on réécrit une méthode dans notre classe enfant, elle doit être au minimum aussi permissive !**
+
+### Visibilité protected
+
+    Class Mere
+    {
+        public string $public = 'Public';
+        protected string $protected = 'Protégé';
+        private string $private = 'Privé';
+     
+        public function fonctionPublique()
+        {
+    	echo 'Fonction publique';
+        }
+     
+        protected function fonctionProtegee()
+        {
+            echo 'Fonction protégée';
+        }
+     
+        private function fonctionPrivee()
+        {
+            echo 'Fonction privée';
+        }
+    }
+     
+    Class Fille extends Mere
+    {
+        public function test()
+        {
+            echo $this->public; // Affiche "Public"
+            echo $this->protected; // Affiche "Protégé"
+            echo $this->private; // Une notice est lancée par PHP
+     
+            parent::fonctionPublique(); // Affiche "Fonction publique"
+            parent::fonctionProtegee(); // Affiche "Fonction protégée"
+            parent::fonctionPrivee(); // Erreur fatale !
+        }
+    }
+     
+    $fille = new Fille();
+    $fille->test();
+    echo $fille->public;
+    $fille->fonctionPublique();
+    echo $fille->protected; // Erreur fatale !
+    $fille->fonctionProtegee(); // Erreur fatale !
+    echo $fille->private; // Une notice est lancée par PHP
+    $fille->fonctionPrivee(); // Erreur fatale !
