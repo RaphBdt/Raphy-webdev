@@ -90,3 +90,7 @@ Les deux méthodes magiques sont les plus importantes pour __toString et __const
     $obj = new MaClasse;
 
 Ceci charge les classes. Et c'est optimisé car on ne charge pas une classe tant qu'elle n'est pas instanciée.
+
+### L'héritage
+
+Présentation du problème : on veut créer une classe par type de poste au foot. On veut donc leur donne un nom, un page, un poids... Mais aussi des caractéristiques propres à chaque poste. L'attaquant a une précision de tir, le défenseur a une caractéristiques au niveau de positionnement... En gros, ils ont des caractéristiques communes, mais aussi des différentes. C'est là que l'héritage intervient. 
