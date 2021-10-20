@@ -62,6 +62,7 @@ pages:
 - content/cours-git-et-github/travailler-a-partir-d-un-nouveau-projet.md
 - content/cours-git-et-github/travailler-a-partir-d-un-projet-existant.md
 - content/cours-git-et-github/utiliser-git-reset.md
+- content/cours-javascript-web/acceder-aux-elements-du-dom.md
 - content/cours-javascript-web/comprendre-ce-qu-est-le-dom.md
 - content/cours-le-terminal/aller-plus-loin-avec-de-nouvelles-commandes.md
 - content/cours-le-terminal/decouverte-du-terminal.md
