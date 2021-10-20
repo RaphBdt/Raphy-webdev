@@ -75,3 +75,18 @@ Méthode magique couramment utilisée __toString :
     echo $user; // Affiche "Lilian DI ROSA"
 
 Les deux méthodes magiques sont les plus importantes pour __toString et __construct
+
+## Autoload
+
+    <?php
+    
+    function loadClass($className)
+    {
+        require $className . '.php';
+    }
+    
+    spl_autoload_register('loadClass');
+    
+    $obj = new MaClasse;
+
+Ceci charge les classes. Et c'est optimisé car on ne charge pas une classe tant qu'elle n'est pas instanciée.
