@@ -1,6 +1,6 @@
 ---
-part: "1"
-id: "1"
+part: 1
+id: 1
 title: Cours 1
 
 ---
