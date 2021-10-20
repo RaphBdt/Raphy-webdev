@@ -91,7 +91,7 @@ Les deux méthodes magiques sont les plus importantes pour __toString et __const
 
 Ceci charge les classes. Et c'est optimisé car on ne charge pas une classe tant qu'elle n'est pas instanciée.
 
-### L'héritage
+## L'héritage
 
 Présentation du problème : on veut créer une classe par type de poste au foot. On veut donc leur donne un nom, un page, un poids... Mais aussi des caractéristiques propres à chaque poste. L'attaquant a une précision de tir, le défenseur a une caractéristiques au niveau de positionnement... En gros, ils ont des caractéristiques communes, mais aussi des différentes. C'est là que l'héritage intervient. 
 
@@ -131,3 +131,39 @@ Présentation du problème : on veut créer une classe par type de poste au foot
     $fille->methodeFille(); // Affiche "Fille"
      
     echo $fille->prive; // Erreur
+
+### Surcharge de méthode
+
+    <?php
+     
+    // Classe mère
+    Class A
+    {
+        public int $attribut = 1;
+     
+        public function levelUp(): void
+        {
+            $this->attribut++;
+        }
+    }
+     
+    // Classe Fille
+    Class B extends A
+    {
+        public int $test = 1;
+     
+        public function levelUp()
+        {
+            // Utilisation du mot clé parent. Ce mot clé permet d'appeler et d'éxécuter la méthode de la classe mère, ici la classe A
+            parent::levelUp();
+            $this->test++;
+        }
+    }
+     
+    $obj = new B();
+    echo $obj->attribut; // Affiche "1"
+    echo $obj->test; // Affiche "1"
+     
+    $obj->levelUp();
+    echo $obj->attribut; // Affiche "2"
+    echo $obj->test; // Affiche "2"
