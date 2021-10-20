@@ -216,3 +216,7 @@ Présentation du problème : on veut créer une classe par type de poste au foot
     $fille->fonctionProtegee(); // Erreur fatale !
     echo $fille->private; // Une notice est lancée par PHP
     $fille->fonctionPrivee(); // Erreur fatale !
+
+### Abstraction
+
+**Une classe abstraite ne peut pas être héritée.**
