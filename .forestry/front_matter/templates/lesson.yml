@@ -69,6 +69,7 @@ pages:
 - content/cours-javascript-web/modifier-le-dom.md
 - content/cours-javascript-web/recuperer-les-donnees-d-un-service-web.md
 - content/cours-javascript-web/recuperer-les-donnees-des-utilisateurs-avec-les-evenements.md
+- content/cours-javascript-web/valider-les-donnees-saisies-par-nos-utilisateurs.md
 - content/cours-le-terminal/aller-plus-loin-avec-de-nouvelles-commandes.md
 - content/cours-le-terminal/decouverte-du-terminal.md
 - content/cours-le-terminal/gerer-fichiers-et-dossiers.md
