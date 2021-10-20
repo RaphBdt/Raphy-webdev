@@ -4,7 +4,7 @@ id: 2
 title: Cours 2
 
 ---
-## Les méthodes magiques (suite)
+### Les méthodes magiques (suite)
 
 Pour vérifier si une méthode ou une méthode statique existe :
 
@@ -76,7 +76,7 @@ Méthode magique couramment utilisée __toString :
 
 Les deux méthodes magiques sont les plus importantes pour __toString et __construct
 
-## Autoload
+### Autoload
 
     <?php
     
