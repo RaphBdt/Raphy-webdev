@@ -73,3 +73,5 @@ Méthode magique couramment utilisée __toString :
      
     // Avec toString
     echo $user; // Affiche "Lilian DI ROSA"
+
+Les deux méthodes magiques sont les plus importantes pour __toString et __construct
