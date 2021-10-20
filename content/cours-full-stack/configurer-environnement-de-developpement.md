@@ -8,7 +8,7 @@ Il faut installer le _runtime_ de Node.
 
 ## Installer Node
 
-[Cliquer ici pour savoir comment installer npm et Node.js correctement.](file:///Users/raphaelbeaudet/Library/Mobile%20Documents/com\~apple\~CloudDocs/Raphy-webdev/html_css/sass/installer-sass.html) Cela a pour effet d'installer le runtime JavaScript de Node ce qui permet également d'exécuter les serveurs Node. En même temps, ça installe **Node Package Manager** (_npm_).
+\[Cliquer ici pour savoir comment installer npm et Node.js correctement.\](file:///Users/raphaelbeaudet/Library/Mobile%20Documents/com\~apple\~CloudDocs/Raphy-webdev/html_css/sass/installer-sass.html) Cela a pour effet d'installer le runtime JavaScript de Node ce qui permet également d'exécuter les serveurs Node. En même temps, ça installe **Node Package Manager** (_npm_).
 
 ## Installer Angular
 
