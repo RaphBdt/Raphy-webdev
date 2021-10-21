@@ -70,6 +70,7 @@ pages:
 - content/cours-javascript-web/ecouter-des-evenements.md
 - content/cours-javascript-web/gerer-du-code-asynchrone.md
 - content/cours-javascript-web/modifier-le-dom.md
+- content/cours-javascript-web/optimiser-le-code.md
 - content/cours-javascript-web/paralleliser-plusieurs-requetes-http.md
 - content/cours-javascript-web/recuperer-les-donnees-d-un-service-web.md
 - content/cours-javascript-web/recuperer-les-donnees-des-utilisateurs-avec-les-evenements.md
