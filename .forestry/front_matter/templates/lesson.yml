@@ -69,6 +69,7 @@ pages:
 - content/cours-javascript-web/comprendre-l-asynchrone.md
 - content/cours-javascript-web/ecouter-des-evenements.md
 - content/cours-javascript-web/gerer-du-code-asynchrone.md
+- content/cours-javascript-web/gerer-les-dependances.md
 - content/cours-javascript-web/modifier-le-dom.md
 - content/cours-javascript-web/optimiser-le-code.md
 - content/cours-javascript-web/paralleliser-plusieurs-requetes-http.md
