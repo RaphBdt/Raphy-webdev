@@ -64,6 +64,7 @@ pages:
 - content/cours-git-et-github/travailler-a-partir-d-un-projet-existant.md
 - content/cours-git-et-github/utiliser-git-reset.md
 - content/cours-javascript-web/acceder-aux-elements-du-dom.md
+- content/cours-javascript-web/compiler-et-executer-le-code.md
 - content/cours-javascript-web/comprendre-ce-qu-est-le-dom.md
 - content/cours-javascript-web/comprendre-ce-que-sont-des-api-et-un-service-web.md
 - content/cours-javascript-web/comprendre-l-asynchrone.md
