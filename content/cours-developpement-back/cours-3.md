@@ -387,3 +387,22 @@ Hydrater un objet revient à lui donner tous les éléments dont il a besoin pou
             return $bars;
         }
     }
+
+Il faut **toujours préparer sa requête** pour ne pas se faire pirater !
+
+### Utilisation 
+
+    // On crée un Bar
+    $bar = new Bar([
+        'nom' => 'Chez beber',
+        'adresse' => '25 rue de la soif'
+    ]);
+    
+    // On se connecte à la base de donnée
+    $db = new PDO('mysql:host=localhost;dbname=bars', 'root', '');
+    
+    // On instancie notre manager
+    $manager = new BarManager($db);
+    
+    // On sauvegarde en base notre bar !
+    $manager->add($bar);
