@@ -336,7 +336,6 @@ Hydrater un objet revient à lui donner tous les éléments dont il a besoin pou
 
 **Il y a un Manager par classe.**
 
-    // Structure de base de notre manager
     class BarManager
     {
         public function __construct(private PDO $dao)
@@ -364,7 +363,9 @@ Hydrater un objet revient à lui donner tous les éléments dont il a besoin pou
         public function update(Bar $bar): void
         {
             $q = $this->dao->prepare('UPDATE bars SET nom = :nom, adresse = :adresse WHERE id = :id');
-            $q->bindValue('id', $bar->getId());
+            $q->bindValue(':id', $bar->getId());
+            $q->bindValue(':nom', $bar->getNom());
+            $q->bindValue(':adresse', $bar->getAdresse());
             $q->execute();
         }
      
