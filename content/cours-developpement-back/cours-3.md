@@ -97,3 +97,115 @@ Nous ne sommes pas obligés d'être dans une méthode statique pour utiliser la 
     C::test();
 
 Ici ça affiche C. 
+
+    Class A
+    {
+        public static function finalTest()
+        {
+            static::whoAmI();
+        }
+     
+        public static function whoAmI()
+        {
+            echo 'A';
+        }
+    }
+     
+    Class B extends A
+    {
+        public static function test()
+        {
+            self::finalTest();
+        }
+     
+        public static function whoAmI()
+        {
+            echo 'B';
+        }
+    }
+     
+    Class C extends B
+    {
+        public static function whoAmI()
+        {
+            echo 'C';
+        }
+    }
+     
+    C::test();
+
+Ici ça affiche C. 
+
+    Class A
+    {
+        public static function finalTest()
+        {
+            static::whoAmI();
+        }
+     
+        public static function whoAmI()
+        {
+            echo 'A';
+        }
+    }
+     
+    Class B extends A
+    {
+        public static function test()
+        {
+            A::finalTest();
+        }
+     
+        public static function whoAmI()
+        {
+            echo 'B';
+        }
+    }
+     
+    Class C extends B
+    {
+        public static function whoAmI()
+        {
+            echo 'C';
+        }
+    }
+     
+    C::test();
+
+Ici ça affiche A.
+
+    class TestParent
+    {
+        public function __construct()
+        {
+            static::qui();
+        }
+     
+        public static function qui()
+        {
+            echo 'TestParent';
+        }
+    }
+     
+    class TestChild extends TestParent
+    {
+        public function __construct()
+        {
+            static::qui();
+        }
+     
+        public function test()
+        {
+            $o = new TestParent();
+        }
+     
+        public static function qui()
+        {
+            echo 'TestChild';
+        }
+    }
+     
+    $o = new TestChild;
+    $o->test();
+
+Ica ça affiche TestChild puis TestParent. 
