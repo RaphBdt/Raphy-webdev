@@ -208,4 +208,182 @@ Ici ça affiche A.
     $o = new TestChild;
     $o->test();
 
-Ica ça affiche TestChild puis TestParent. 
+Ici ça affiche TestChild puis TestParent. 
+
+## Les espaces de noms
+
+L'idée c'est d'avoir la possibilité d'appeler plusieurs classes par le même nom. 
+
+    namespace Application;
+    class User
+    {}
+    
+    namespace Messenger;
+    class User
+    {}
+    
+    $applicationUser = new \Application\User;
+    $messengerUser = new \Messenger\User;
+    
+    $date = new DateTime(); // Erreur
+    $date = new \DateTime(); // Ok
+
+Quand on se trouve dans une interface de nom, il mettre un \\ pour se mettre dans l'interface de nom globale.
+
+Dans notre exemple, dès la ligne 5, on se trouve dans le namespace Messenger.
+
+    namespace App\SubNamespace\Application;
+    class User
+    {}
+    
+    use \Application\User;
+    $user = new User();
+
+Dans ce nouvel exemple, on se trouve toujours dans la namespace App\\SubNamespace\\Application, même si on instancie une classe du namespace \\Application\\User.
+
+_En pratique :_
+
+On commence toujours par écrire le namespace, car comme ça tout ce qui se trouve en dessous se trouve dans le namespace déclaré. 
+
+Ensuite, on déclare tous nos use pour pouvoir utiliser les classes qui se trouvent dans les autres namespaces. 
+
+## Persistance des données
+
+### Hydratation
+
+Hydrater un objet revient à lui apporter tout ce dont il a besoin pour fonctionner. 
+
+Hydrater un objet revient à lui donner tous les éléments dont il a besoin pour fonctionner (ses attributs).
+
+    class Bar
+    {
+        private int $id;
+        private string $nom;
+        private string $adresse;
+     
+        public function __construct(array $data)
+        {
+            $this->hydrate($data);
+        }
+     
+        private function hydrate(array $data)
+        {
+            // On parcours le tableau de data
+            foreach ($data as $key => $value)
+            {
+                // Pour chaque colonne, on construit le nom de la méthode avec la clé du tableau :
+                // setId, setNom, setAdresse
+                // ucfirst est une fonction qui met en majuscule la premiere lettre d'une chaine de caractères
+                $method = 'set' . ucfirst($key);
+     
+                // On vérifie si la màthode existe
+                if (method_exists($this, $method))
+                {
+                    // Si elle existe, on appelle la méthode avec la valeur correspondant à la clé du tableau
+                    $this->$method($value);
+                }
+            }
+        }
+     
+        public function getId(): int
+        {
+            return $this->id;
+        }
+     
+        public function setId(int $id)
+        {
+            $this->id = $id;
+        }
+     
+        public function getNom(): string
+        {
+            return $this->nom;
+        }
+     
+        public function setNom(string $nom)
+        {
+            $this->nom = $nom;
+        }
+     
+        public function getAdresse(): string
+        {
+            return $this->adresse;
+        }
+     
+        public function setAdresse(string $adresse)
+        {
+            $this->adresse = $adresse;
+        }
+    }
+     
+    $request = $db->query('SELECT id, nom, adresse FROM bars');
+     
+    while ($data = $request->fetch(PDO::FETCH_ASSOC))
+    {
+        $data = [];
+        $data['id'] = 27;
+        $data['nom'] = 'Lilian';
+        $data['adresse'] = '110 rue de la soif';
+     
+        $bar = new Bar($data);
+     
+        echo $bar->getId() . '<br>' . $bar->getNom() . '<br>' . $bar->getAdresse();
+    }
+
+### Les Managers
+
+**RAPPEL : UNE CLASSE = UN RÔLE**
+
+**Il y a un Manager par classe.**
+
+    // Structure de base de notre manager
+    class BarManager
+    {
+        public function __construct(private PDO $dao)
+        {
+        }
+     
+        public function add(Bar $bar): void
+        {
+            $q = $this->dao->prepare('INSERT INTO bars(nom, adresse) VALUES(:nom, :adresse)');
+            $q->bindValue(':nom', $bar->getNom());
+            $q->bindValue(':adresse', $bar->getAdresse());
+            $q->execute();
+        }
+     
+        public function get(int $id): Bar
+        {
+            $q = $this->dao->prepare('SELECT nom, adresse FROM bars WHERE id = :id');
+            $q->bindValue(':id', $id);
+            $q->execute();
+            $data = $q->fetch(PDO::FETCH_ASSOC);
+     
+            return new Bar($data);
+        }
+     
+        public function update(Bar $bar): void
+        {
+            $q = $this->dao->prepare('UPDATE bars SET nom = :nom, adresse = :adresse WHERE id = :id');
+            $q->bindValue('id', $bar->getId());
+            $q->execute();
+        }
+     
+        public function delete(Bar $bar): void
+        {
+            $this->dao->exec('DELETE FROM bars WHERE id = ' . $bar->getId());
+        }
+        
+        public function getAll(): array
+        {
+            $bars = [];
+            $q = $this->dao->prepare('SELECT nom, adresse FROM bars ORDER BY nom');
+            $q->execute();
+     
+            while ($data = $q->fetch(PDO::FETCH_ASSOC))
+            {
+                $bars[] = new Bar($data);
+            }
+     
+            return $bars;
+        }
+    }
