@@ -294,3 +294,181 @@ Dans cet exemple : on créée deux méthodes identiques dans deux classes diffé
      
     $b = new b;
     $b->hello(); // Affiche aussi « Hello world ! ».
+
+    trait Log
+    {
+        public function log($severity, $text)
+        {
+            $str = "[" . (new DateTime())->format('d/m/Y H:i:s') . "] [" . $severity . "] " . $text;
+            file_put_contents('debug.log', $str, FILE_APPEND);
+        }
+    }
+     
+    class User
+    {
+        use Log;
+        private $username;
+     
+        public function __construct()
+        {
+            $this->log('INFO', "L'utilisateur " . $this->username . " vient de se connecter");
+        }
+    }
+     
+    class Match
+    {
+        use Log;
+        private $team1;
+        private $team2;
+        private $score;
+     
+        public function test()
+        {
+            $this->log('INFO', "L'équipe " . $this->team1 . " a battu l'équipe " . $this->team2 . " sur le score de " . $this->score);
+        }
+    }
+
+Utiliser plusieurs traits :
+
+    trait A
+    {
+        public function test()
+        {
+            echo 'Test A';
+        }
+    }
+     
+    trait B
+    {
+        public function test()
+        {
+            echo 'Test B';
+        }
+    }
+     
+    class MaClasse
+    {
+        use A, B;
+    }
+     
+    $o = new MaClasse();
+    $o->test(); // Erreur fatale : trait method format has not been applied, because there are collisions with other trait methods
+     
+    class MaClasse2
+    {
+        // Pour résoudre les conflits, nous définissions des méthodes "prioritaires"
+        use A, B
+        {
+            A::test insteadof B;
+        }
+    }
+     
+    $o = new MaClasse2();
+    $o->test(); // Affiche 'Test A'
+
+Ordre de priorité des méthodes pour les traits :
+
+    trait A
+    {
+        public function test()
+        {
+            echo 'Test A';
+        }
+    }
+     
+    class MaClasse
+    {
+        use A;
+     
+        public function test()
+        {
+            echo 'Test MaClasse';
+        }
+    }
+     
+    $o = new MaClasse();
+    $o->test(); // Affiche 'Test MaClasse' : Les méthodes de classes sont prioritaires par rapport aux méthodes de trait
+
+    trait A
+    {
+        public function test()
+        {
+            echo 'Test A';
+        }
+    }
+     
+    class Mere
+    {
+        public function test()
+        {
+            echo 'Test classe mère';
+        }
+    }
+     
+    class Fille extends Mere
+    {
+        use A;
+    }
+     
+    $o = new Fille();
+    $o->test(); // Affiche 'Test A' : Les méthodes de trait sont prioritaires par rapport aux méthodes de la classe mère;
+
+Attributs de traits :
+
+    trait A
+    {
+        private $attr = 'Attribut du trait A';
+     
+        public function getAttr()
+        {
+            return $this->attr;
+        }
+    }
+     
+    class MaClasse
+    {
+        use A;
+    }
+     
+    $o = new MaClasse();
+    echo $o->getAttr();
+     
+    // Une classe qui utilise un trait ne peut redéfinir un attribut
+    class MaClasse2
+    {
+        use A;
+     
+        private $attr = 'Attribut du trait A'; // Erreur stricte (peut ne pas s'afficher suivant configuration de PHP)
+        private $attr = 'Test'; // Erreur fatale
+     
+        // A noter qu'il est impossible de définir des "priorités" comme pour les méthodes
+    }
+
+Imbrication de traits :
+
+    trait A
+    {
+        public function testA()
+        {
+            echo 'Test A';
+        }
+    }
+     
+    trait B
+    {
+        use A;
+     
+        public function testB()
+        {
+            echo 'Test B';
+        }
+    }
+     
+    class MaClasse
+    {
+        use B;
+    }
+     
+    $o = new MaClasse();
+    $o->testA(); // Affiche "Test A"
+    $o->testB(); // Affiche "Test B"
