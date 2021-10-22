@@ -105,6 +105,7 @@ pages:
 - content/cours-symfony/deboguer-une-application-a-l-aide-du-web-profiler.md
 - content/cours-symfony/dynamiser-nos-vues-avec-twig.md
 - content/cours-symfony/installer-symfony.md
+- content/cours-symfony/interagir-avec-les-utilisateurs.md
 - content/cours-symfony/premiere-page-symfony.md
 - content/cours-symfony/realiser-une-application-configurable-et-extensible.md
 - content/cours-vuejs/premiere-application-vue.js.md
