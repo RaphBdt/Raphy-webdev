@@ -102,6 +102,7 @@ pages:
 - content/cours-sass/ressources.md
 - content/cours-sass/systeme-7-1.md
 - content/cours-sass/utiliser-bem-avec-sass.md
+- content/cours-symfony/deboguer-une-application-a-l-aide-du-web-profiler.md
 - content/cours-symfony/installer-symfony.md
 - content/cours-symfony/premiere-page-symfony.md
 - content/cours-symfony/realiser-une-application-configurable-et-extensible.md
