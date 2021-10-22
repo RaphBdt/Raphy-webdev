@@ -6,7 +6,7 @@
     <ol>
       <span v-for="(lesson, idx) in lessons" :key="idx">
         <li v-if="lesson.part === 1">
-          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
+          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
         </li>
       </span>
     </ol>
@@ -14,7 +14,7 @@
     <ol>
       <span v-for="(lesson, idx) in lessons" :key="idx">
         <li v-if="lesson.part === 2">
-          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
+          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
         </li>
       </span>
     </ol>
@@ -22,7 +22,7 @@
     <ol>
       <span v-for="(lesson, idx) in lessons" :key="idx">
         <li v-if="lesson.part === 3">
-          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
+          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
         </li>
       </span>
     </ol>
@@ -30,7 +30,7 @@
     <ol>
       <span v-for="(lesson, idx) in lessons" :key="idx">
         <li v-if="lesson.part === 4">
-          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
+          <nuxt-link :to="{ name: 'cours-javascript-cours-full-stack-slug', params: { slug: lesson.slug }}">{{ lesson.title }}</nuxt-link>
         </li>
       </span>
     </ol>
