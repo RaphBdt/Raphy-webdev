@@ -104,4 +104,5 @@ pages:
 - content/cours-sass/utiliser-bem-avec-sass.md
 - content/cours-symfony/installer-symfony.md
 - content/cours-symfony/premiere-page-symfony.md
+- content/cours-symfony/realiser-une-application-configurable-et-extensible.md
 - content/cours-vuejs/premiere-application-vue.js.md
