@@ -53,6 +53,7 @@ pages:
 - content/cours-developpement-back/cours-4.md
 - content/cours-developpement-back/saucepress.md
 - content/cours-full-stack/configurer-environnement-de-developpement.md
+- content/cours-full-stack/demarrer-serveur-node.md
 - content/cours-git-et-github/corriger-les-erreurs-sur-le-depot-distant.md
 - content/cours-git-et-github/corriger-un-commit-rate.md
 - content/cours-git-et-github/decouvrir-le-controle-de-versions.md
