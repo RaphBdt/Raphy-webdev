@@ -4,7 +4,7 @@ id: 2
 title: Démarrer serveur Node
 
 ---
-Qu'est-ce que Node ?
+## Qu'est-ce que Node ?
 
 **Node** est le **_runtime_** qui permet d'écrire toutes nos tâches côté serveur, en JavaScript, telles que la logique métier, la persistance des données et la sécurité. Il ajoute également des fonctionnalités que le JavaScript du navigateur standard ne possède pas.
 
