@@ -62,6 +62,7 @@ pages:
 - content/cours-full-stack/enregistrer-et-recuperer-les-donnees.md
 - content/cours-full-stack/modifier-et-supprimer-des-donnees.md
 - content/cours-full-stack/optimiser-la-structure-du-back-end.md
+- content/cours-full-stack/preparer-base-de-donnees-pour-les-informations-d-authentification.md
 - content/cours-git-et-github/corriger-les-erreurs-sur-le-depot-distant.md
 - content/cours-git-et-github/corriger-un-commit-rate.md
 - content/cours-git-et-github/decouvrir-le-controle-de-versions.md
