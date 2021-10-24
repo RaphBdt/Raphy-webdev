@@ -129,6 +129,7 @@ pages:
 - content/cours-vuejs/determiner-quand-le-code-doit-s-executer.md
 - content/cours-vuejs/faciliter-la-maintenance-grace-aux-composants-monofichiers.md
 - content/cours-vuejs/gerer-la-navigation-avec-le-routeur-vue.md
+- content/cours-vuejs/gerer-les-styles-de-l-application.md
 - content/cours-vuejs/premiere-application-vue.js.md
 - content/cours-vuejs/stocker-et-gerer-les-donnees.md
 - content/cours-vuejs/utiliser-les-directives-vue.md
