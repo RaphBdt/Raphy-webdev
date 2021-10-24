@@ -63,6 +63,7 @@ pages:
 - content/cours-full-stack/creer-une-route-get.md
 - content/cours-full-stack/creer-une-route-post.md
 - content/cours-full-stack/demarrer-serveur-node.md
+- content/cours-full-stack/developper-la-fonction-delete-du-back-end.md
 - content/cours-full-stack/enregistrer-et-recuperer-les-donnees.md
 - content/cours-full-stack/modifier-et-supprimer-des-donnees.md
 - content/cours-full-stack/modifier-les-routes-pour-prendre-en-compte-les-fichiers.md
