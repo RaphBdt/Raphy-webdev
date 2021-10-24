@@ -126,6 +126,7 @@ pages:
 - content/cours-symfony/premiere-page-symfony.md
 - content/cours-symfony/realiser-une-application-configurable-et-extensible.md
 - content/cours-vuejs/creer-un-nouveau-proket-avec-vue-cli.md
+- content/cours-vuejs/determiner-quand-le-code-doit-s-executer.md
 - content/cours-vuejs/faciliter-la-maintenance-grace-aux-composants-monofichiers.md
 - content/cours-vuejs/gerer-la-navigation-avec-le-routeur-vue.md
 - content/cours-vuejs/premiere-application-vue.js.md
