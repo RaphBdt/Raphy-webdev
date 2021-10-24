@@ -65,6 +65,7 @@ pages:
 - content/cours-full-stack/demarrer-serveur-node.md
 - content/cours-full-stack/enregistrer-et-recuperer-les-donnees.md
 - content/cours-full-stack/modifier-et-supprimer-des-donnees.md
+- content/cours-full-stack/modifier-les-routes-pour-prendre-en-compte-les-fichiers.md
 - content/cours-full-stack/optimiser-la-structure-du-back-end.md
 - content/cours-full-stack/preparer-base-de-donnees-pour-les-informations-d-authentification.md
 - content/cours-full-stack/verifier-les-informations-d-identification-d-un-utilisateur.md
