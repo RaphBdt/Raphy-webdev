@@ -136,5 +136,6 @@ pages:
 - content/cours-vuejs/le-principe-de-state-management.md
 - content/cours-vuejs/passer-des-datas-entre-les-composants.md
 - content/cours-vuejs/premiere-application-vue.js.md
+- content/cours-vuejs/recuperer-des-donnees-depuis-vuex.md
 - content/cours-vuejs/stocker-et-gerer-les-donnees.md
 - content/cours-vuejs/utiliser-les-directives-vue.md
