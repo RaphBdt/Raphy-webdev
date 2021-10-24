@@ -126,3 +126,4 @@ pages:
 - content/cours-symfony/premiere-page-symfony.md
 - content/cours-symfony/realiser-une-application-configurable-et-extensible.md
 - content/cours-vuejs/premiere-application-vue.js.md
+- content/cours-vuejs/stocker-et-gerer-les-donnees.md
