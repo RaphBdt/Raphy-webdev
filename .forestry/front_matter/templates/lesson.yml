@@ -52,6 +52,7 @@ pages:
 - content/cours-developpement-back/cours-3.md
 - content/cours-developpement-back/cours-4.md
 - content/cours-developpement-back/saucepress.md
+- content/cours-full-stack/accepter-les-fichiers-entrants-avec-multer.md
 - content/cours-full-stack/configurer-environnement-de-developpement.md
 - content/cours-full-stack/configurer-le-middleware-d-authentification.md
 - content/cours-full-stack/configurer-notre-base-de-donnees.md
