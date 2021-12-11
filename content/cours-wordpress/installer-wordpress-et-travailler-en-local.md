@@ -58,3 +58,29 @@ Le dossier _Upgrades_ n'est pas vraiment intéressant mais WordPress en a besoin
 _Langues_ va stocker les différences langues de l'interface d'administration et certains thèmes et extensions. 
 
 **En résumé on ne doit toucher qu'à wp-config et à wp-content/ !**
+
+## Structure de WordPress côté base de données
+
+Souvent, il existe une table qui stocke les informations principales et son équivalent _metas_ qui contient les informations supplémentaires. 
+
+_wpusers et wp_usermeta_ contiennent les informations de tous les utilisateurs du site. 
+
+**Quand on développe une extensions et qu'on a besoin de stocker des informations supplémentaires à propos d'un utilisateur, on peut utiliser la fonction _update_user_meta()_**
+
+ _wp_options_ contient toutes les options du site_._
+
+_wp_posts_ et _wp_postmetas_ contiennent toutes les publications de WordPress.
+
+_wp_comments_ et _wp_commentmeta_ stockent les commentaires.
+
+_wp_terms_, _wp_termmeta_, _wp_term_taxonomy_ et _wp_term_relationship_ concernent les taxonomies.
+
+_wp_terms_ contient tous les termes des taxonomies qu'on a créé.
+
+_wp_term_taxonomy_ permet lancer les relations entre termes et taxonomies.
+
+_wp_termmeta_ permet d'enregistrer des données supplémentaires pour chaque taxonomie.
+
+_wp_links_ n'est plus utilisé.
+
+Tips : pour connaître l'ID d'un article on le modifie dans le back office et l'ID apparaît dans l'URL. 
