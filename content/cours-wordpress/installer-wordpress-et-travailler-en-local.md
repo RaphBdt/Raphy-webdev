@@ -84,3 +84,17 @@ _wp_termmeta_ permet d'enregistrer des données supplémentaires pour chaque tax
 _wp_links_ n'est plus utilisé.
 
 Tips : pour connaître l'ID d'un article on le modifie dans le back office et l'ID apparaît dans l'URL. 
+
+## Activer messages d'erreur
+
+Dans wp-config.php, il faut ajouter la ligne 
+
+    define( 'WP_DEBUG', true );
+
+**Bien penser à la mettre à false au moment de la mise en ligne !**
+
+## Les bonnes pratiques du fichier de configuration
+
+Désactiver l'éditeur de fichiers :
+
+    define( 'DISALLOW_FILE_EDIT', true );
