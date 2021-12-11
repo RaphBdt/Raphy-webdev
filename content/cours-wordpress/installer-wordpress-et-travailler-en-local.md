@@ -98,3 +98,11 @@ Dans wp-config.php, il faut ajouter la ligne
 Désactiver l'éditeur de fichiers :
 
     define( 'DISALLOW_FILE_EDIT', true );
+
+Limiter le nombre de révisions pour ne pas surcharger la base de données :
+
+    define( 'WP_POST_REVISIONS', 5 );
+
+Espacer les enregistrements automatiques (en secondes) :
+
+    define( 'AUTOSAVE_INTERVAL', 300 ); // 300/60 secondes = 5 minutes
