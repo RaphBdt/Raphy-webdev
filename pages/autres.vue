@@ -12,6 +12,9 @@
                 <b-col lg=4 class="mb-3">
                     <lesson-card title="Développement back" url="/cours-autres/developpement-back">POO en PHP. Création d'un framework. Cours réalisé par Lilian pour MyDigitalSchool.</lesson-card>
                 </b-col>
+                <b-col lg=4 class="mb-3">
+                    <lesson-card title="Développement WordPress" url="/cours-autres/wordpress">Développement entier d'un thème WordPress. Cours réalisé par Capitaine WP.</lesson-card>
+                </b-col>
             </b-row>
         </b-container>
     </div>

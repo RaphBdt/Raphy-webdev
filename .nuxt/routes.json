@@ -42,6 +42,12 @@
     "chunkName": "pages/cours-autres/symfony"
   },
   {
+    "name": "cours-autres-wordpress",
+    "path": "/cours-autres/wordpress",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/wordpress.vue",
+    "chunkName": "pages/cours-autres/wordpress"
+  },
+  {
     "name": "cours-git-github-git-et-github",
     "path": "/cours-git-github/git-et-github",
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/git-et-github.vue",
@@ -106,6 +112,12 @@
     "path": "/cours-autres/cours-symfony/:slug?",
     "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-symfony/_slug.vue",
     "chunkName": "pages/cours-autres/cours-symfony/_slug"
+  },
+  {
+    "name": "cours-autres-cours-wordpress-slug",
+    "path": "/cours-autres/cours-wordpress/:slug?",
+    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-wordpress/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-wordpress/_slug"
   },
   {
     "name": "cours-git-github-cours-git-et-github-slug",
