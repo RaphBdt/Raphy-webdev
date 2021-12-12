@@ -310,3 +310,23 @@ Même si WordPress nous offre nativement beaucoup de modèle de page différent,
         */
         get_header(); 
     ?>
+
+## Les champs personnalisés : custom Fields
+
+Les champs personnalisés permettent d'ajouter des informations dans une publication en plus du contenu principal. Néanmoins, c'est vite limité et on sera mené à basculer vers ACF.
+
+Par défaut, les champs additionnels sont cachés. Il faut aller dans le trois points en haut à droite pour les afficher.
+
+Cela marche sous la forme clé / valeur. Par exemple : "Note ➡️ 7". Et on peut en ajouter autant qu'on veut.  
+C'est quand même vraiment limité car on peut mettre uniquement du texte dans les valeurs. 
+
+Pour afficher, il faut utiliser ce code :
+
+    <p>
+        <strong>Note :</strong>
+        <?php echo get_post_meta( get_the_ID(), 'note', true ); ?> / 10
+    </p>
+
+Le troisième paramètre indique si la valeur de ce champ est unique (ici il n'y aura pas deux notes).  Sinon, cela renvoie un tableau de données. 
+
+**Il faut garder à l'esprit que ACF sera bien plus puissant.** 
