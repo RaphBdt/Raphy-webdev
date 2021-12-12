@@ -1,5 +1,5 @@
 ---
-part: 3
+part: 2
 id: 1
 title: Concepts de base
 
@@ -82,3 +82,20 @@ On peut maintenant modifier _index.php_ et mettre :
     <?php get_footer(); ?>
 
 Il faut aussi penser à régler le site sur la langue française dans _Réglages > Général > Langue du site._
+
+Grâce à la génération automatique de classes CSS, on peut par exemple ajuster notre menu fix lorsque la barre d'administration WordPress apparaît :
+
+    .menu {
+        position: fixed;
+        top: 0px;
+    }
+    
+    .admin-bar .menu {
+    	top: 32px; /* on prend en compte le décalage */
+    }
+
+Tips : en terme de performances, il est plus intéressant de charger en priorité les fichiers CSS en haut de page et les scripts JS en bas de page. 
+
+### On va maintenant ajouter un logo en haut du site 
+
+On va créer un dossier _img_ à la racine du thème.
