@@ -234,4 +234,79 @@ Dans la page _single.php_, mettre :
 * `comment_number()` : affiche le nombre de commentaires publiés dans l’article ;
 * `get_avatar()` : Récupère l’avatar d’un utilisateur depuis le service Gravatar ;
 
-Si on veut récupérer la valeur dans directement l'afficher, alors un utilise _get_ au lieu de _the_.
+Si on veut récupérer la valeur sans directement l'afficher, alors un utilise _get_ au lieu de _the_.
+
+## Les templates parts
+
+Imaginons que nous souhaitons créer un formulaire d'abonnement à une Newsletter et qu'il figure dans plusieurs endroits sur notre site... Ce sera un peu lourd de copier / coller ce code dans nos différents fichiers PHP. C'est là que nos templates parts entrent en jeu.
+
+Imaginons ce fichier _parts/newsletter.php_ :
+
+    <form class="newsletter-form">
+        <p>Des offres exclusives, des actus WordPress et du contenu bonus en avant-première</p>
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="submit" value="Je m'abonne">
+    </form>
+
+Et bien pour l'utiliser dans nos pages il faut juste utiliser cette fonction :
+
+    <?php get_template_part( 'parts/newsletter' ); ?>
+
+Comme home.php et archive.php ont très très très souvent le même rendu côté front, alors on peut utiliser un template part dans home.php :
+
+    <?php get_template_part( 'archive' ); ?>
+
+Pareil pour search.php :
+
+    <?php get_template_part( 'archive' ); ?>
+
+## Les Conditional Tags
+
+Les conditionnal tags sont des fonctions fournies par WordPress qui testent différentes situations comme "est-on sur la page d'accueil", "l'utilisateur est-il connecté"...
+
+Exemple :
+
+    <?php 
+    if ( is_user_logged_in() ):
+    	$current_user = wp_get_current_user(); 
+        echo "Bonjour, " . $current_user->user_firstname;
+    else:
+        echo "Bonjour, visiteur !";
+    endif;
+
+Dans archive.php, on peut ajouter ce code qui permet de définir le titre à afficher :
+
+    <?php 
+        if ( is_category() ) {
+            $title = "Catégorie : " . single_tag_title( '', false );
+        }
+        elseif ( is_tag() ) {
+            $title = "Étiquette : " . single_tag_title( '', false );
+        }
+        elseif ( is_search() ) {
+            $title = "Vous avez recherché : " . get_search_query();
+        }
+        else {
+            $title = 'Le Blog';
+        }
+    ?>
+    <h1><?php echo $title; ?></h1>
+
+## Les templates de pages personnalisés
+
+Même si WordPress nous offre nativement beaucoup de modèle de page différent, il est essentiel de savoir comment en créer de nouveaux. Par exemple, on voudrait peut-être avoir un page contact différente de _page.php_... Et bah il suffit d'ajouter ce code au début du fichier :
+
+    <?php
+    /*
+      Template Name: Contact
+    */
+
+**Truc super cool que je viens de découvrir :** On peut créer un modèle de page pour un produit ! Pour ça :
+
+    <?php
+        /*
+        Template Name: Product-well
+        Template Post Type: product
+        */
+        get_header(); 
+    ?>
