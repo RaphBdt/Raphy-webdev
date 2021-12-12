@@ -98,4 +98,43 @@ Tips : en terme de performances, il est plus intéressant de charger en priorit�
 
 ### On va maintenant ajouter un logo en haut du site 
 
-On va créer un dossier _img_ à la racine du thème.
+On va créer un dossier _img_ à la racine du thème et mettre notre logo.
+
+Ajoutant ce code avant l'ouverture du body :
+
+    <body <?php body_class(); ?>>
+      <header class="header">
+        <a href="<?php echo home_url( '/' ); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo">
+        </a>  
+      </header>
+
+## Créons du faux contenu
+
+Pour avoir un aperçu de ce qu'on va faire, il faut créer des pages, articles et catégories fictifs. 
+
+Dans _Réglages > Lecture_, on peut changer le type de page qu'on veut en page d'accueil / articles.
+
+## Le Template Hierarchy
+
+WordPress affiche des modèles différents en fonction de la page demandée. Page standard, liste des articles, catégories, affichage d'un article...
+
+**Le Template Hierarchy est un processus du coeur de WordPress qui lui permet de déterminer quel modèle de page utiliser en fonction de la page sélectionnée.**
+
+Voici le Template Hierarchy de WordPress en version simplifiée :
+
+![](https://capitainewp.io/wp-content/uploads/2019/02/template-hierarchy-simplifie.png)
+
+On va maintenant créer tous les fichiers nécessaire dans notre thème :
+
+* archive.php ;
+* front-page.php ;
+* home.php ;
+* page.php ;
+* single.php.
+
+Dans chacun d'eux ils faut mettre ce code :
+
+    <?php get_header(); ?>
+    	<h1>ARCHIVE</h1>
+    <?php get_footer(); ?>
