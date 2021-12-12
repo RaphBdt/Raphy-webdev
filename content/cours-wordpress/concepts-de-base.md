@@ -35,3 +35,50 @@ Dans _index.php_ on va mettre le minimum pour le moment :
     	<h1>Coucou !</h1>
     </body>
     </html>
+
+Dans _functions.php_ :
+
+    // Ajouter la prise en charge des images mises en avant
+    add_theme_support( 'post-thumbnails' );
+    
+    // Ajouter automatiquement le titre du site dans l'en-tête du site
+    add_theme_support( 'title-tag' );
+
+**Attention : Dans le fichiers qui contiennent exclusivement du PHP, comme functions.php, on ne referme pas la balise PHP à la fin du fichier.**
+
+On peut maintenant activer notre thème dans Apparence > Thèmes.
+
+## L'en-tête et le pied de page
+
+On va créer deux nouveaux fichiers : _header.php_ et _footer.php_, qui seront appelés sur l'ensemble des pages de notre site. 
+
+Dans _header.php_ :
+
+    <!DOCTYPE html>
+    <html <?php language_attributes(); ?>>
+    <head>
+        <meta charset="<?php bloginfo('charset'); ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        
+        <?php wp_head(); ?>
+    </head>
+    
+    <body <?php body_class(); ?>>
+        
+        <?php wp_body_open(); ?>
+
+Dans _footer.php_ :
+
+    	<?php wp_footer(); ?>
+    </body>
+    </html>
+
+On peut maintenant modifier _index.php_ et mettre :
+
+    <?php get_header(); ?>
+    
+    <h1>Coucou</h1>
+    
+    <?php get_footer(); ?>
+
+Il faut aussi penser à régler le site sur la langue française dans _Réglages > Général > Langue du site._
