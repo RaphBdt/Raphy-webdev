@@ -138,3 +138,100 @@ Dans chacun d'eux ils faut mettre ce code :
     <?php get_header(); ?>
     	<h1>ARCHIVE</h1>
     <?php get_footer(); ?>
+
+## La boucle WordPress et les templates tags
+
+La boucle WordPress est le mécanisme qui va nous permettre d'afficher les données entrées via l'interface d'administration de WordPress.
+
+Dans _page.php_ et _front-page.php_ on peut mettre ce code :
+
+    <?php get_header(); ?>
+    
+    	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+        
+        	<h1><?php the_title(); ?></h1>
+        
+        	<?php the_content(); ?>
+    
+    	<?php endwhile; endif; ?>
+    
+    <?php get_footer(); ?>
+
+Les **templates tags** sont des fonctions incluses dans WordPress qui permettent d'afficher les contenus qu'on a administré dans l'interface d'édition. Il en existe des dizaines :
+
+    the_content(), the_title()...
+
+Dans _archive.php_ et _home.php_, on peut entre ce code :
+
+    <?php get_header(); ?>
+     	<h1>Le blog Capitaine WP</h1>
+    
+    	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+      
+    		<article class="post">
+    			<h2><?php the_title(); ?></h2>
+          
+            	<?php the_post_thumbnail(); ?>
+                
+                <p class="post__meta">
+                    Publié le <?php the_time( get_option( 'date_format' ) ); ?> 
+                    par <?php the_author(); ?> • <?php comments_number(); ?>
+                </p>
+                
+          		<?php the_excerpt(); ?>
+                  
+          		<p>
+                    <a href="<?php the_permalink(); ?>" class="post__link">Lire la suite</a>
+                </p>
+    		</article>
+    
+    	<?php endwhile; endif; ?>
+    <?php get_footer(); ?>
+
+Précision au niveau du the_excerpt : cette fonction affiche ce qui est indiqué dans le champ Extrait ou bien avant le bloc "lire la suite" dans Gutenberg.
+
+Dans la page _single.php_, mettre :
+
+    <?php get_header(); ?>
+      <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+        
+        <article class="post">
+          <?php the_post_thumbnail(); ?>
+    
+          <h1><?php the_title(); ?></h1>
+    
+          <div class="post__meta">
+            <?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>
+            <p>
+              Publié le <?php the_date(); ?>
+              par <?php the_author(); ?>
+              Dans la catégorie <?php the_category(); ?>
+              Avec les étiquettes <?php the_tags(); ?>
+            </p>
+          </div>
+    
+          <div class="post__content">
+            <?php the_content(); ?>
+          </div>
+        </article>
+    
+      <?php endwhile; endif; ?>
+    <?php get_footer(); ?>
+
+### Les Templates Tags les plus utilisés 
+
+* `the_title()` : affiche le titre de l’article ou la page ;
+* `the_content()` : affiche le contenu, écrit depuis l’éditeur visuel (Gutenberg ou TinyMCE) ;
+* `the_post_thumbnail()` : affiche l’éventuelle image mise en avant ;
+* `the_excerpt()` : affiche un extrait de l’article, soit le contenu du champ extrait, soit le début de l’article jusqu’à la balise Lire la suite ;
+* `the_category()` : affiche une liste de la ou des catégories sélectionnées ;
+* `the_tags()` : affiche une liste des éventuelles étiquettes de l’article ;
+* `the_author()` : affiche le nom de l’auteur ;
+* `the_author_link()` : affiche le nom de l’auteur avec un lien vers son site personnel ;
+* `the_date()` : affiche une fois les dates où des articles ont été publiés ;
+* `the_time()` : affiche la date de publication de chaque article ;
+* `the_permalink()` : affiche l’URL vers l’article, à mettre dans une balise `<a>` ;
+* `comment_number()` : affiche le nombre de commentaires publiés dans l’article ;
+* `get_avatar()` : Récupère l’avatar d’un utilisateur depuis le service Gravatar ;
+
+Si on veut récupérer la valeur dans directement l'afficher, alors un utilise _get_ au lieu de _the_.
