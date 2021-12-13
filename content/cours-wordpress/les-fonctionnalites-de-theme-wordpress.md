@@ -6,7 +6,7 @@ title: Les fonctionnalités de thème WordPress
 ---
 ## Les Hooks et le fichier functions.php
 
-Les hooks permettent de modifier le comportement natif de WordPress sans pour autant toucher au code source. 
+Les hooks permettent de modifier le comportement natif de WordPress sans pour autant toucher au code source.
 
 Il existe deux types de look.  
 Les **Actions** : à des moments clés, on peut lancer notre propre fonction pour faire des choses supplémentaires dans WordPress.  
@@ -95,11 +95,11 @@ Si on veut par exemple charger un script sur certaines pages uniquement :
 
 On peut régler la taille des images dans _Réglages > Médias_. Il est recommandé d'augmenter la taille moyenne à 1200px et la grande taille à 1920px.
 
-WordPress est très intelligent car il affiche automatiquement la bonne taille d'image pour l'utilisateur. Même si nous on ne voit que trois tailles d'images, WordPress en génère plus que ça et affiche à l'utilisateur le meilleur format. On n'a pas trop à se soucier de la taille des images qu'on affiche. 
+WordPress est très intelligent car il affiche automatiquement la bonne taille d'image pour l'utilisateur. Même si nous on ne voit que trois tailles d'images, WordPress en génère plus que ça et affiche à l'utilisateur le meilleur format. On n'a pas trop à se soucier de la taille des images qu'on affiche.
 
 ## Les menus et le moteur de recherche
 
-Pour vois les menus, il faut aller dans _Apparence > Personnaliser > Menus._ Pour l'instant on ne peut pas les voir car on en n'a pas créé. 
+Pour vois les menus, il faut aller dans _Apparence > Personnaliser > Menus._ Pour l'instant on ne peut pas les voir car on en n'a pas créé.
 
 Pour déclarer des emplacements de menu, il faut aller dans _functions.php_ et mettre :
 
@@ -161,3 +161,5 @@ Pour gérer les réglages des commentaires, il faut aller dans _Réglages > Disc
 Voici ce qu'il faut mettre dans _single.php_ pour activer les commentaires :
 
     <?php comments_template(); // Par ici les commentaires ?>
+
+Pour ne pas avoir de spam, il faut mettre le plugin Akismet Spam et générer une clé d'API pour pouvoir la rentrer dans le plugin.  
