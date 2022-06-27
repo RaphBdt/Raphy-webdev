@@ -21,4 +21,7 @@ export default {
         text-decoration: none;
         color: #5C755F;
     }
+    img {
+        max-width: 100%;
+    }
 </style>
