@@ -2,175 +2,218 @@
   {
     "name": "autres",
     "path": "/autres",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/autres.vue",
-    "chunkName": "pages/autres"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/autres.vue",
+    "chunkName": "pages/autres",
+    "_name": "_28c77682"
   },
   {
     "name": "git-github",
     "path": "/git-github",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/git-github.vue",
-    "chunkName": "pages/git-github"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/git-github.vue",
+    "chunkName": "pages/git-github",
+    "_name": "_22960a9d"
   },
   {
     "name": "html-css",
     "path": "/html-css",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/html-css.vue",
-    "chunkName": "pages/html-css"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/html-css.vue",
+    "chunkName": "pages/html-css",
+    "_name": "_5cc6d180"
   },
   {
     "name": "javascript",
     "path": "/javascript",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/javascript.vue",
-    "chunkName": "pages/javascript"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/javascript.vue",
+    "chunkName": "pages/javascript",
+    "_name": "_0d426368"
   },
   {
     "name": "cours-autres-conception-objet",
     "path": "/cours-autres/conception-objet",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/conception-objet.vue",
-    "chunkName": "pages/cours-autres/conception-objet"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/conception-objet.vue",
+    "chunkName": "pages/cours-autres/conception-objet",
+    "_name": "_031c6514"
   },
   {
     "name": "cours-autres-developpement-back",
     "path": "/cours-autres/developpement-back",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/developpement-back.vue",
-    "chunkName": "pages/cours-autres/developpement-back"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/developpement-back.vue",
+    "chunkName": "pages/cours-autres/developpement-back",
+    "_name": "_6ed1a961"
+  },
+  {
+    "name": "cours-autres-strapi-nuxt",
+    "path": "/cours-autres/strapi-nuxt",
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/strapi-nuxt.vue",
+    "chunkName": "pages/cours-autres/strapi-nuxt",
+    "_name": "_4eadbdcc"
   },
   {
     "name": "cours-autres-symfony",
     "path": "/cours-autres/symfony",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/symfony.vue",
-    "chunkName": "pages/cours-autres/symfony"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/symfony.vue",
+    "chunkName": "pages/cours-autres/symfony",
+    "_name": "_a0965fa4"
   },
   {
     "name": "cours-autres-wordpress",
     "path": "/cours-autres/wordpress",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/wordpress.vue",
-    "chunkName": "pages/cours-autres/wordpress"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/wordpress.vue",
+    "chunkName": "pages/cours-autres/wordpress",
+    "_name": "_ebfb3b68"
   },
   {
     "name": "cours-git-github-git-et-github",
     "path": "/cours-git-github/git-et-github",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/git-et-github.vue",
-    "chunkName": "pages/cours-git-github/git-et-github"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/git-et-github.vue",
+    "chunkName": "pages/cours-git-github/git-et-github",
+    "_name": "_140e2537"
   },
   {
     "name": "cours-git-github-le-terminal",
     "path": "/cours-git-github/le-terminal",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/le-terminal.vue",
-    "chunkName": "pages/cours-git-github/le-terminal"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/le-terminal.vue",
+    "chunkName": "pages/cours-git-github/le-terminal",
+    "_name": "_2c584841"
   },
   {
     "name": "cours-html-css-animations-css",
     "path": "/cours-html-css/animations-css",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/animations-css.vue",
-    "chunkName": "pages/cours-html-css/animations-css"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/animations-css.vue",
+    "chunkName": "pages/cours-html-css/animations-css",
+    "_name": "_20882ec1"
   },
   {
     "name": "cours-html-css-bootstrap",
     "path": "/cours-html-css/bootstrap",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/bootstrap.vue",
-    "chunkName": "pages/cours-html-css/bootstrap"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/bootstrap.vue",
+    "chunkName": "pages/cours-html-css/bootstrap",
+    "_name": "_194be4fc"
   },
   {
     "name": "cours-html-css-sass",
     "path": "/cours-html-css/sass",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/sass.vue",
-    "chunkName": "pages/cours-html-css/sass"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/sass.vue",
+    "chunkName": "pages/cours-html-css/sass",
+    "_name": "_59d27bca"
   },
   {
     "name": "cours-javascript-full-stack",
     "path": "/cours-javascript/full-stack",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/full-stack.vue",
-    "chunkName": "pages/cours-javascript/full-stack"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/full-stack.vue",
+    "chunkName": "pages/cours-javascript/full-stack",
+    "_name": "_4c51e84c"
   },
   {
     "name": "cours-javascript-javascript-web",
     "path": "/cours-javascript/javascript-web",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/javascript-web.vue",
-    "chunkName": "pages/cours-javascript/javascript-web"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/javascript-web.vue",
+    "chunkName": "pages/cours-javascript/javascript-web",
+    "_name": "_379e7404"
   },
   {
     "name": "cours-javascript-vuejs",
     "path": "/cours-javascript/vuejs",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/vuejs.vue",
-    "chunkName": "pages/cours-javascript/vuejs"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/vuejs.vue",
+    "chunkName": "pages/cours-javascript/vuejs",
+    "_name": "_54e54e22"
   },
   {
     "name": "cours-autres-cours-conception-objet-damien-slug",
     "path": "/cours-autres/cours-conception-objet-damien/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-conception-objet-damien/_slug.vue",
-    "chunkName": "pages/cours-autres/cours-conception-objet-damien/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-conception-objet-damien/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-conception-objet-damien/_slug",
+    "_name": "_0adb98e1"
   },
   {
     "name": "cours-autres-cours-developpement-back-slug",
     "path": "/cours-autres/cours-developpement-back/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-developpement-back/_slug.vue",
-    "chunkName": "pages/cours-autres/cours-developpement-back/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-developpement-back/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-developpement-back/_slug",
+    "_name": "_10d17f7f"
+  },
+  {
+    "name": "cours-autres-cours-strapi-nuxt-slug",
+    "path": "/cours-autres/cours-strapi-nuxt/:slug?",
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-strapi-nuxt/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-strapi-nuxt/_slug",
+    "_name": "_c12e62dc"
   },
   {
     "name": "cours-autres-cours-symfony-slug",
     "path": "/cours-autres/cours-symfony/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-symfony/_slug.vue",
-    "chunkName": "pages/cours-autres/cours-symfony/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-symfony/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-symfony/_slug",
+    "_name": "_305b4526"
   },
   {
     "name": "cours-autres-cours-wordpress-slug",
     "path": "/cours-autres/cours-wordpress/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-wordpress/_slug.vue",
-    "chunkName": "pages/cours-autres/cours-wordpress/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-autres/cours-wordpress/_slug.vue",
+    "chunkName": "pages/cours-autres/cours-wordpress/_slug",
+    "_name": "_11dcad84"
   },
   {
     "name": "cours-git-github-cours-git-et-github-slug",
     "path": "/cours-git-github/cours-git-et-github/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/cours-git-et-github/_slug.vue",
-    "chunkName": "pages/cours-git-github/cours-git-et-github/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/cours-git-et-github/_slug.vue",
+    "chunkName": "pages/cours-git-github/cours-git-et-github/_slug",
+    "_name": "_9b1ae1a2"
   },
   {
     "name": "cours-git-github-cours-le-terminal-slug",
     "path": "/cours-git-github/cours-le-terminal/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/cours-le-terminal/_slug.vue",
-    "chunkName": "pages/cours-git-github/cours-le-terminal/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-git-github/cours-le-terminal/_slug.vue",
+    "chunkName": "pages/cours-git-github/cours-le-terminal/_slug",
+    "_name": "_51b91df9"
   },
   {
     "name": "cours-html-css-cours-animations-css-slug",
     "path": "/cours-html-css/cours-animations-css/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/cours-animations-css/_slug.vue",
-    "chunkName": "pages/cours-html-css/cours-animations-css/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/cours-animations-css/_slug.vue",
+    "chunkName": "pages/cours-html-css/cours-animations-css/_slug",
+    "_name": "_c72fd9c2"
   },
   {
     "name": "cours-html-css-cours-bootstrap-slug",
     "path": "/cours-html-css/cours-bootstrap/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/cours-bootstrap/_slug.vue",
-    "chunkName": "pages/cours-html-css/cours-bootstrap/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/cours-bootstrap/_slug.vue",
+    "chunkName": "pages/cours-html-css/cours-bootstrap/_slug",
+    "_name": "_c34f590c"
   },
   {
     "name": "cours-html-css-cours-sass-slug",
     "path": "/cours-html-css/cours-sass/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/cours-sass/_slug.vue",
-    "chunkName": "pages/cours-html-css/cours-sass/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-html-css/cours-sass/_slug.vue",
+    "chunkName": "pages/cours-html-css/cours-sass/_slug",
+    "_name": "_0216a528"
   },
   {
     "name": "cours-javascript-cours-full-stack-slug",
     "path": "/cours-javascript/cours-full-stack/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-full-stack/_slug.vue",
-    "chunkName": "pages/cours-javascript/cours-full-stack/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-full-stack/_slug.vue",
+    "chunkName": "pages/cours-javascript/cours-full-stack/_slug",
+    "_name": "_4f887bf8"
   },
   {
     "name": "cours-javascript-cours-javascript-web-slug",
     "path": "/cours-javascript/cours-javascript-web/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-javascript-web/_slug.vue",
-    "chunkName": "pages/cours-javascript/cours-javascript-web/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-javascript-web/_slug.vue",
+    "chunkName": "pages/cours-javascript/cours-javascript-web/_slug",
+    "_name": "_2a8099bc"
   },
   {
     "name": "cours-javascript-cours-vuejs-slug",
     "path": "/cours-javascript/cours-vuejs/:slug?",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-vuejs/_slug.vue",
-    "chunkName": "pages/cours-javascript/cours-vuejs/_slug"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/cours-javascript/cours-vuejs/_slug.vue",
+    "chunkName": "pages/cours-javascript/cours-vuejs/_slug",
+    "_name": "_1af786a7"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/raphaelbeaudet/Documents/Projets/Raphy-webdev/Raphy-webdev/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/raphaelbeaudet/Projets/Raphy-webdev/Raphy-webdev/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_095a7d7a"
   }
 ]

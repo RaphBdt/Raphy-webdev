@@ -15,6 +15,9 @@
                 <b-col lg=4 class="mb-3">
                     <lesson-card title="Développement WordPress" url="/cours-autres/wordpress">Développement entier d'un thème WordPress. Cours réalisé par Capitaine WP.</lesson-card>
                 </b-col>
+                <b-col lg=4 class="mb-3">
+                    <lesson-card title="Strapi Nuxt" url="/cours-autres/strapi-nuxt">Tutoriel : Apprendre à créer une application web avec Strapi et Nuxt.</lesson-card>
+                </b-col>
             </b-row>
         </b-container>
     </div>
